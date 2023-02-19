@@ -4,43 +4,63 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="landing.css"/>
+    <link rel="stylesheet" href="./landing.css"/>
     <title>SportWorld</title>
 </head>
 <body>
     <header class="header">
-        <div class="wrapper">
-            <div class="header__logo">
+        <div class="header__logo">
                 <a href="/" class="header__logo-link">
                     <img class="logo__svg" src="img/svg/logo.svg" alt="logo">
                 </a>
             </div>
-
+        <div class="wrapper">
             <nav class="header__nav">
                 <ul class="nav__links">
                     <li class="header__item">
-                        <a href="#about" class="header__link">Про магазин</a>
+                        <a href="#about" class="header__link js-scroll">Про магазин</a>
                     </li>
                     <li class="header__item">
-                        <a href="#shipping" class="header__link">Доставка</a>
+                        <a href="#shipping" class="header__link js-scroll">Доставка</a>
                     </li>
                     <li class="header__item">
-                        <a href="#contacts" class="header__link">Контакти</a>
+                        <a href="#contacts" class="header__link js-scroll">Контакти</a>
                     </li>
+                    <li class="header__item">
+                        <a href="#" class="header__link js-scroll">Головна</a>
+                    </li>
+                    <li class="header__item">
+                        <a href="#" class="header__link hidden__link">Пошук</a>
+                    </li>
+                    <li class="header__item">
+                        <a href="#" class="header__link hidden__link">Корзина</a>
+                    </li>
+                    <li class="header__item">
+                        <a href="#" class="header__link hidden__link">Авторизуватися</a>
+                    </li> 
                 </ul>
+                <div class="header__nav-close">
+                    <span class="header__burger-line-close"></span>
+                    <span class="header__burger-line-close"></span>
+                </div>
             </nav>
-            <ul class="header__nav nav__links">
-                    <li class="header__item">
-                        <img src="img/svg/search.svg" class="search__icon" alt="search__icon"/>
-                    </li>
-                    <li class="header__item">
-                        <img src="img/svg/cart.svg" class="search__icon" alt="search__icon"/>
-                    </li>
-                    <li class="header__item">
-                        <img src="img/svg/profile.svg" class="search__icon" alt="search__icon"/>
-                    </li>
-                </ul>
+            <div class="header__burger burger">
+                <span class="header__burger-line header__burger-line-first"></span>
+                <span class="header__burger-line header__burger-line-second"></span>
+                <span class="header__burger-line header__burger-line-third"></span>
+            </div>
         </div>
+        <ul class="header__nav nav__links">
+            <!-- <li class="header__item header__icon_item">
+                <img src="img/svg/search.svg" class="header__icon" alt="search__icon"/>
+            </li> -->
+            <li class="header__item header__icon_item">
+                <img src="img/svg/cart.svg" class="header__icon" alt="search__icon"/>
+            </li>
+            <li class="header__item header__icon_item">
+                <img src="img/svg/profile.svg" class="header__icon" alt="search__icon"/>
+            </li>
+        </ul>
     </header>
     <main class="main">
         <section class="hero__section">
@@ -58,22 +78,22 @@
                 </div>
                 <button class="button__white">До товарів</button>
                 </br>
-                <p class="learn__more"><a href="#" class="learn__more-link">дізнатися більше</a></p>
+                <p class="learn__more"><a href="#about" class="learn__more-link js-scroll">дізнатися більше</a></p>
             </div>
         </section>
-        <section class="advantages__section">
+        <section class="advantages__section" id="">
             <div class="wrapper">
                 <div class="heading__advantages">
-                    <h3 class="heading__advantages-text">
+                    <h3 class="heading__advantages-text" id="about">
                         Вам необхідний спортивний інвентар від SportWorld тому що:
                     </h3>
                 </div>
                 <div class="advantages__cards">
                     <div class="advantages__card">
                         <img src="img/svg/card_icon1.svg" alt="weightlifting" class="adv__card-icon">
-                        <p class="adv__card-desc">Завдяки підібраному обладнанню
+                        <p class="adv__card-desc">Завдяки обладнанню
                         ви <span class="adv__accent-text">швидше досягнете результату</span>. 
-                        Наші консультанти допоможуть Вам у виборі.</p>
+                        Консультанти допоможуть Вам у виборі.</p>
                     </div>
                     <div class="advantages__card">
                         <img src="img/svg/card_icon2.svg" alt="guarantee" class="adv__card-icon">
@@ -96,19 +116,40 @@
                 </div>
                 <p class="food__desc">Правильне харчування - це 70% успіху при тренуванні. Щоденної їжі не завжди достатньо, щоб збагатити організм необхідними мікроелементами, а також білком, жирами, та вітамінами. Саме тому варто звернути увагу на спортивне харчування. </p>
                 <!-- SLIDER -->
-                <div class="cards__slider">
-                    <input type="radio" name="slider" id="slides__1" checked>
-                    <input type="radio" name="slider" id="slides__2">
-                    <input type="radio" name="slider" id="slides__3">
+                <div class="slider">
+                    <input checked='checked' class='carousel__activator' id='carousel-slide-activator-1' name='carousel' type='radio'>
+                    <input class='carousel__activator' id='carousel-slide-activator-2' name='carousel' type='radio'>
+                    <input class='carousel__activator' id='carousel-slide-activator-3' name='carousel' type='radio'>
+                    
+                    <div class='carousel__controls'>
+                        <label class='carousel__control control__right' for='carousel-slide-activator-2'>
+                            <img src="./img/svg/slider__tick.svg" alt="" class="">
+                        </label>
+                    </div>
+                    <div class='carousel__controls'>
+                        <label class='carousel__control control__left' for='carousel-slide-activator-1'>
+                            <img src="./img/svg/slider__tick.svg" alt="" class="">
+                        </label>
+                        <label class='carousel__control control__right' for='carousel-slide-activator-3'>
+                            <img src="./img/svg/slider__tick.svg" alt="" class="">
+                        </label>
+                    </div>
+                    <div class='carousel__controls'>
+                        <label class='carousel__control control__left' for='carousel-slide-activator-2'>
+                            <img src="./img/svg/slider__tick.svg" alt="" class="">
+                        </label>
+                    </div>
 
-                    <div class="content">
-                        <div class="cards" id="slides__1">
-                            <!-- ITEM CARD -->
-                            <div class="card">
+                    <div class='carousel__screen'>
+                        <div class='carousel__track'>
+
+                            <div class="card slider__item__mobile-1 carousel__item__tablet-2 carousel__item__desktop-3">
                                 <div class="item__card">
                                     <div class="card__content">
                                         <div class="img__container">
-                                            <img src="img/svg/item_like.svg" alt="like__item" class="like__item">
+                                            <button class="like__item-button">
+                                                <img src="img/svg/item_like.svg" alt="like__item" class="like__item">
+                                            </button>
                                             <img src="img/item_img.jpg" alt="item_img" class="item__img">
                                         </div>
                                         <p class="item__name">Соєвий протеїн зі смаком шоколаду PowerPro 1000г</p>
@@ -116,13 +157,14 @@
                                     </div>
                                 </div>
                             </div>
-                            <!-- ITEM CARD -->
-                            <!-- ITEM CARD -->
-                            <div class="card">
+
+                            <div class="card slider__item__mobile-1 carousel__item__tablet-2 carousel__item__desktop-3">
                                 <div class="item__card">
                                     <div class="card__content">
                                         <div class="img__container">
-                                            <img src="img/svg/item_like.svg" alt="like__item" class="like__item">
+                                            <button class="like__item-button">
+                                                <img src="img/svg/item_like.svg" alt="like__item" class="like__item">
+                                            </button>
                                             <img src="img/item_img.jpg" alt="item_img" class="item__img">
                                         </div>
                                         <p class="item__name">Соєвий протеїн зі смаком шоколаду PowerPro 1000г</p>
@@ -130,13 +172,14 @@
                                     </div>
                                 </div>
                             </div>
-                            <!-- ITEM CARD -->
-                            <!-- ITEM CARD -->
-                            <div class="card">
+
+                            <div class="card slider__item__mobile-1 carousel__item__tablet-2 carousel__item__desktop-3">
                                 <div class="item__card">
                                     <div class="card__content">
                                         <div class="img__container">
-                                            <img src="img/svg/item_like.svg" alt="like__item" class="like__item">
+                                            <button class="like__item-button">
+                                                <img src="img/svg/item_like.svg" alt="like__item" class="like__item">
+                                            </button>
                                             <img src="img/item_img.jpg" alt="item_img" class="item__img">
                                         </div>
                                         <p class="item__name">Соєвий протеїн зі смаком шоколаду PowerPro 1000г</p>
@@ -144,13 +187,14 @@
                                     </div>
                                 </div>
                             </div>
-                            <!-- ITEM CARD -->
-                            <!-- ITEM CARD -->
-                            <div class="card">
+
+                            <div class="card slider__item__mobile-1 carousel__item__tablet-2 carousel__item__desktop-3">
                                 <div class="item__card">
                                     <div class="card__content">
                                         <div class="img__container">
-                                            <img src="img/svg/item_like.svg" alt="like__item" class="like__item">
+                                            <button class="like__item-button">
+                                                <img src="img/svg/item_like.svg" alt="like__item" class="like__item">
+                                            </button>
                                             <img src="img/item_img.jpg" alt="item_img" class="item__img">
                                         </div>
                                         <p class="item__name">Соєвий протеїн зі смаком шоколаду PowerPro 1000г</p>
@@ -158,15 +202,14 @@
                                     </div>
                                 </div>
                             </div>
-                            <!-- ITEM CARD -->
-                        </div>
-                        <div class="cards" id="slides__2">
-                            <!-- ITEM CARD -->
-                            <div class="card">
+
+                            <div class="card slider__item__mobile-1 carousel__item__tablet-2 carousel__item__desktop-3">
                                 <div class="item__card">
                                     <div class="card__content">
                                         <div class="img__container">
-                                            <img src="img/svg/item_like.svg" alt="like__item" class="like__item">
+                                            <button class="like__item-button">
+                                                <img src="img/svg/item_like.svg" alt="like__item" class="like__item">
+                                            </button>
                                             <img src="img/item_img.jpg" alt="item_img" class="item__img">
                                         </div>
                                         <p class="item__name">Соєвий протеїн зі смаком шоколаду PowerPro 1000г</p>
@@ -174,13 +217,14 @@
                                     </div>
                                 </div>
                             </div>
-                            <!-- ITEM CARD -->
-                            <!-- ITEM CARD -->
-                            <div class="card">
+
+                            <div class="card slider__item__mobile-1 carousel__item__tablet-2 carousel__item__desktop-3">
                                 <div class="item__card">
                                     <div class="card__content">
                                         <div class="img__container">
-                                            <img src="img/svg/item_like.svg" alt="like__item" class="like__item">
+                                            <button class="like__item-button">
+                                                <img src="img/svg/item_like.svg" alt="like__item" class="like__item">
+                                            </button>
                                             <img src="img/item_img.jpg" alt="item_img" class="item__img">
                                         </div>
                                         <p class="item__name">Соєвий протеїн зі смаком шоколаду PowerPro 1000г</p>
@@ -188,13 +232,14 @@
                                     </div>
                                 </div>
                             </div>
-                            <!-- ITEM CARD -->
-                            <!-- ITEM CARD -->
-                            <div class="card">
+                            
+                            <div class="card slider__item__mobile-1 carousel__item__tablet-2 carousel__item__desktop-3">
                                 <div class="item__card">
                                     <div class="card__content">
                                         <div class="img__container">
-                                            <img src="img/svg/item_like.svg" alt="like__item" class="like__item">
+                                            <button class="like__item-button">
+                                                <img src="img/svg/item_like.svg" alt="like__item" class="like__item">
+                                            </button>
                                             <img src="img/item_img.jpg" alt="item_img" class="item__img">
                                         </div>
                                         <p class="item__name">Соєвий протеїн зі смаком шоколаду PowerPro 1000г</p>
@@ -202,13 +247,14 @@
                                     </div>
                                 </div>
                             </div>
-                            <!-- ITEM CARD -->
-                            <!-- ITEM CARD -->
-                            <div class="card">
+
+                            <div class="card slider__item__mobile-1 carousel__item__tablet-2 carousel__item__desktop-3">
                                 <div class="item__card">
                                     <div class="card__content">
                                         <div class="img__container">
-                                            <img src="img/svg/item_like.svg" alt="like__item" class="like__item">
+                                            <button class="like__item-button">
+                                                <img src="img/svg/item_like.svg" alt="like__item" class="like__item">
+                                            </button>
                                             <img src="img/item_img.jpg" alt="item_img" class="item__img">
                                         </div>
                                         <p class="item__name">Соєвий протеїн зі смаком шоколаду PowerPro 1000г</p>
@@ -216,15 +262,14 @@
                                     </div>
                                 </div>
                             </div>
-                            <!-- ITEM CARD -->
-                        </div>
-                        <div class="cards" id="slides__3">
-                            <!-- ITEM CARD -->
-                            <div class="card">
+
+                            <div class="card slider__item__mobile-1 carousel__item__tablet-2 carousel__item__desktop-3">
                                 <div class="item__card">
                                     <div class="card__content">
                                         <div class="img__container">
-                                            <img src="img/svg/item_like.svg" alt="like__item" class="like__item">
+                                            <button class="like__item-button">
+                                                <img src="img/svg/item_like.svg" alt="like__item" class="like__item">
+                                            </button>
                                             <img src="img/item_img.jpg" alt="item_img" class="item__img">
                                         </div>
                                         <p class="item__name">Соєвий протеїн зі смаком шоколаду PowerPro 1000г</p>
@@ -232,13 +277,14 @@
                                     </div>
                                 </div>
                             </div>
-                            <!-- ITEM CARD -->
-                            <!-- ITEM CARD -->
-                            <div class="card">
+
+                            <div class="card slider__item__mobile-1 carousel__item__tablet-2 carousel__item__desktop-3">
                                 <div class="item__card">
                                     <div class="card__content">
                                         <div class="img__container">
-                                            <img src="img/svg/item_like.svg" alt="like__item" class="like__item">
+                                            <button class="like__item-button">
+                                                <img src="img/svg/item_like.svg" alt="like__item" class="like__item">
+                                            </button>
                                             <img src="img/item_img.jpg" alt="item_img" class="item__img">
                                         </div>
                                         <p class="item__name">Соєвий протеїн зі смаком шоколаду PowerPro 1000г</p>
@@ -246,13 +292,13 @@
                                     </div>
                                 </div>
                             </div>
-                            <!-- ITEM CARD -->
-                            <!-- ITEM CARD -->
-                            <div class="card">
+                            <div class="card slider__item__mobile-1 carousel__item__tablet-2 carousel__item__desktop-3">
                                 <div class="item__card">
                                     <div class="card__content">
                                         <div class="img__container">
-                                            <img src="img/svg/item_like.svg" alt="like__item" class="like__item">
+                                            <button class="like__item-button">
+                                                <img src="img/svg/item_like.svg" alt="like__item" class="like__item">
+                                            </button>
                                             <img src="img/item_img.jpg" alt="item_img" class="item__img">
                                         </div>
                                         <p class="item__name">Соєвий протеїн зі смаком шоколаду PowerPro 1000г</p>
@@ -260,13 +306,14 @@
                                     </div>
                                 </div>
                             </div>
-                            <!-- ITEM CARD -->
-                            <!-- ITEM CARD -->
-                            <div class="card">
+
+                            <div class="card slider__item__mobile-1 carousel__item__tablet-2 carousel__item__desktop-3">
                                 <div class="item__card">
                                     <div class="card__content">
                                         <div class="img__container">
-                                            <img src="img/svg/item_like.svg" alt="like__item" class="like__item">
+                                            <button class="like__item-button">
+                                                <img src="img/svg/item_like.svg" alt="like__item" class="like__item">
+                                            </button>
                                             <img src="img/item_img.jpg" alt="item_img" class="item__img">
                                         </div>
                                         <p class="item__name">Соєвий протеїн зі смаком шоколаду PowerPro 1000г</p>
@@ -274,23 +321,13 @@
                                     </div>
                                 </div>
                             </div>
-                            <!-- ITEM CARD -->
                         </div>
                     </div>
-                    <div id="controls">
-                        <label for="slides__1"></label>
-                        <label for="slides__2"></label>
-                        <label for="slides__3"></label>
-                    </div>
-                    <!-- <div id="bullets">
-                        <label for="slides__1"></label>
-                        <label for="slides__2"></label>
-                    </div> -->
                 </div>
                 <!-- SLIDER -->
             </div>
         </section>
-        <section class="shipping__info__section">
+        <section class="shipping__info__section" id="shipping">
             <div class="wrapper">
                 <h3 class="shipping__heading">Доставка</h3>
                 <p class="shipping__info">Здійснюється сервісами “Нова пошта” та “Meest Express”.</p>
@@ -313,7 +350,7 @@
             </div>
         </section>
     </main>
-    <footer class="footer">
+    <footer class="footer" id="contacts">
         <div class="wrapper">
             <div class="footer__logo">
                 <img src="img/svg/logo_big.svg" alt="logo_big" class="footer__logo_big">
@@ -325,7 +362,7 @@
                         <p class="footer__info__text">м. Київ, вул. Хрещатик 35</p>
                     </li>
                     <li class="footer__info__list-item_big_spacing">
-                        <h5 class="footer__info__heading">Електронна пошта для співпраці</h5>
+                        <h5 class="footer__info__heading">Електронна пошта</h5>
                         <p class="footer__info__text">sportwrld@gmail.com</p>
                     </li>
                     <li class="footer__info__list-item_big_spacing">
@@ -357,5 +394,6 @@
             <p class="copyright">© 2022 Sport World. All rights reserved.</p>
         </div>
     </footer>
+    <script type="text/javascript" src="./script.js"></script>
 </body>
 </html>
