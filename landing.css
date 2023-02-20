@@ -43,7 +43,6 @@ img{
     width: 100%;
     z-index: 999;
     transition: 0.3s linear;
-    /* padding: 20px 90px; */
     padding: 15px 90px;
     display: flex;
     align-items: center;
@@ -53,7 +52,8 @@ img{
 .header .wrapper{
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    margin: 0;
+    justify-content: space-between;
 }
 
 
@@ -73,8 +73,9 @@ img{
 .header__link{
     text-decoration: none;
     color: #fff;
-    margin-right: 20px;
+    /* margin-right: 99px; */
 }
+
 
 .header__logo{
     float: right;
@@ -85,10 +86,10 @@ img{
 }
 
 .header__item{
-    margin-right: 58px;
+    margin-right: 99px;
 }
 
-.header__item:nth-child(4+n){
+.header__item:nth-child(4){
     margin-right: 0;
 }
 
@@ -102,7 +103,7 @@ img{
 }
 
 .header__icon_item{
-    margin-right: 20px;
+    margin-right: 58px;
 }
 
 .hidden__link{
@@ -270,6 +271,10 @@ img{
     padding: 30px 108px 43px 108px;
 }
 
+.adv__card-icon-mobile{
+    display: none;
+}
+
 .adv__card-desc{
     font-weight: 700;
     font-size: 22px;
@@ -373,108 +378,71 @@ img{
 }
 
 
-.slider{
-    padding: 0 78px;
-    margin: 0 auto;
-    width: 100%;
+/* slider */
+
+.slider {
     position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding: 0 72px;
+    margin: 0 auto;
+    z-index: 10;
 }
-
-.carousel__activator {
-  display: none;
+.slider__wrapper {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
 }
-
-.carousel__controls {
-  display: none;
-  align-items: center;
-  justify-content: space-between;
-  position: absolute;
-  top: 0;
-  right: 16px;
-  left: 16px;
-  bottom: 0;
-}
-
-.carousel__controls:first-of-type {
-  justify-content: flex-end;
-}
-.carousel__controls:last-of-type {
-  justify-content: flex-start;
-}
-
-.carousel__control {
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  background-color: transparent;
-  height: 48px;
-  justify-content: center;
-  transition: 0.3s all;
-  width: 48px;
-  z-index: 1;
-}
-
-.carousel__activator:nth-of-type(1):checked
-~ .carousel__controls:nth-of-type(1) {
-  display: flex;
-}
-
-.carousel__activator:nth-of-type(1):checked
-~ .carousel__screen
-.carousel__track {
-  -webkit-transform: translateX(0%);
-          transform: translateX(0%);
-}
-
-.carousel__activator:nth-of-type(2):checked
-~ .carousel__controls:nth-of-type(2) {
-  display: flex;
-}
-
-.carousel__activator:nth-of-type(2):checked
-~ .carousel__screen
-.carousel__track {
-  -webkit-transform: translateX(-105%);
-          transform: translateX(-105%);
-}
-
-.carousel__activator:nth-of-type(3):checked
-~ .carousel__controls:nth-of-type(3) {
-  display: flex;
-}
-
-.carousel__activator:nth-of-type(3):checked
-~ .carousel__screen
-.carousel__track {
-  -webkit-transform: translateX(-210%);
-          transform: translateX(-210%);
-}
-
-.control__right{
-    transform: rotate(180deg);
-}
-
-.carousel__screen {
-  overflow: hidden;
-}
-
-.carousel__track {
-  font-size: 0;
-  transition: all .7s cubic-bezier(.23,.61,.68,.27);
-  white-space: nowrap;
-  -webkit-overflow-scrolling: touch;
-}
-
 .card {
-  display: inline-flex;
-  margin-right: 48px;
-  vertical-align: top;
-  white-space: normal;
+    flex: 0 0 25%;
+    padding: 0 20px;
 }
 
-/* .card:nth-child(4n){
-    margin-right: 0px;
-} */
+.slider::before{
+    background-color:  #D9D9D9;
+    content: '';
+    display: block;
+    width: 70px;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    bottom: 0px;
+    z-index: 1;
+}
+
+.slider::after{
+    background-color:  #D9D9D9;
+    content: '';
+    display: block;
+    width: 70px;
+    position: absolute;
+    top: 0px;
+    right: 0;
+    bottom: 0px;
+    z-index: 1;
+}
+
+.prev-button, .next-button{
+    background: transparent;
+    border: none;
+}
+
+.prev-button{
+    position: absolute;
+    top: 40%;
+    left: 0%;
+    z-index: 10;
+}
+
+.next-button{
+    position: absolute;
+    transform: rotate(180deg);
+    top: 40%;
+    right: 0;
+    z-index: 10;
+}
+
+/* slider */
+
 
 
 
@@ -722,9 +690,38 @@ img{
     }
 } 
 
+@media screen and (max-width:1200px){
+    .header__item{
+        margin-right: 40px;
+    }
+    .header__item:nth-child(4){
+        margin-right: 0;
+    }
+    .why__we__heading{
+        font-size: 34px;
+        line-height: 38px;
+    }
+    .why__we-list__item__text{
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    .card {
+        flex: 0 0 33.3%;
+        padding: 0 10px;
+    }
+
+    .item__card{
+        margin: 0 auto;
+    }
+
+}
+
 @media screen and (max-width:960px){
     .header{
         justify-content: space-between;
+        padding-left: 10px;
+        padding-right: 0;
     } 
 
     .header .wrapper{
@@ -768,7 +765,7 @@ img{
     }
     .header__nav-close{
         width: 40px;
-        height: 40px;
+        height: 22px;
         position: absolute;
         top: 20px;
         right: 20px;
@@ -790,14 +787,14 @@ img{
     }
 
     .heading{
-        padding-top: 170px;
+        padding-top: 150px;
         max-width: 700px;
-        margin-bottom: 35px;
+        margin-bottom: 25px;
     }
 
     .heading__text{
         font-size: 45px;
-        line-height: 55px;
+        line-height: 50px;
     }
 
     .sub__heading{
@@ -807,10 +804,18 @@ img{
 
     .sub__heading__text{
         font-size: 28px;
+        line-height: 32px;
     }
 
     .sub__heading__mini{
-        font-size: 15px;
+        display: none;
+    }
+    
+    .button__white{
+        padding: 10px 12px;
+        border-radius: 15px;
+        font-size: 24px;
+        margin-top: 0;
     }
 
     .advantages__section{
@@ -818,7 +823,7 @@ img{
     }
 
     .heading__advantages{
-        margin-bottom: 50px;
+        margin-bottom: 40px;
     }
 
     .heading__advantages-text{
@@ -827,12 +832,14 @@ img{
     }
 
     .advantages__card{
-        max-width: 250px;
+        max-width: 200px;
+        margin-right: 0;
     }
 
     .advantages__cards{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
+        column-gap: 20px;
     }
 
     .adv__card-icon{
@@ -863,15 +870,6 @@ img{
         margin-bottom: 30px;
     }
 
-    .slider{
-        padding: 0 110px;
-    }
-
-
-    /* .card:nth-child(3n){
-        margin-right: 0px;
-    } */
-
     .shipping__info__section{
         padding: 70px 0;
         margin-bottom: 70px;
@@ -890,13 +888,13 @@ img{
 
     .why__we__section{
         margin-bottom: 70px;
+        padding: 0 30px;
     }
     .why__we__heading{
-        font-size: 30px;
+        font-size: 2em;
         margin-bottom: 50px;
     }
     .why__we-list__item__text{
-        /* text-align: center; */
         font-size: 20px;
     }
 
@@ -930,4 +928,308 @@ img{
     .copyright{
         font-size: 12px;
     }
+}
+
+@media screen and (max-width:850px){
+    .card {
+        flex: 0 0 50%;
+        padding: 0 10px;
+    }
+}
+
+@media screen and (max-width:700px){
+    .heading{
+        padding-top: 130px;
+        max-width: 700px;
+        margin-bottom: 22px;
+    }
+
+    .heading__text{
+        font-size: 45px;
+        line-height: 50px;
+    }
+
+    .sub__heading{
+        max-width: 400px;
+        margin-bottom: 50px;
+    }
+
+    .sub__heading__text{
+        font-size: 22px;
+        line-height: 26px;
+    }
+
+    .heading__advantages-text{
+        font-size: 24px;
+        line-height: 32px;
+        text-align: center;
+    }
+
+    .advantages__card{
+        max-width: 180px;
+        margin-right: 0;
+    }
+
+    .adv__card-desc{
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 16px;
+        padding: 0 12px 12px 12px;
+    }
+    
+    .adv__card-icon{
+        padding: 12px 60px 12px 60px;
+    }
+}
+
+@media screen and (max-width:620px){
+    .hero__section{
+        background: url('img/hero_img.jpg') no-repeat center;
+        background-size: cover;
+        min-height: 100vh;
+        position: relative;
+    } 
+    .header{
+        max-height: 50px;
+    }
+    .logo__svg{
+        max-width: 128px;
+    }
+    .header__burger{
+        max-height: 22px;
+    }
+    .heading{
+        padding-top: 160px;
+        margin-bottom: 11px;
+    }
+    .heading__text{
+        font-size: 5vh;
+        line-height: 6.5vh;
+    }
+    .sub__heading{
+        margin-bottom: 68px;
+        display: block;
+    }
+    .sub__heading__text{
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 3.2vh;
+        line-height: 4.2vh;
+    }
+    .learn__more{
+        display: none;
+    }
+    .button__white{
+        float: none;
+        margin: 0 auto;
+        padding: 12px 17px;
+        border-radius: 20px;
+        font-weight: 600;
+        font-size: 4vh;
+        line-height: 4.5vh;
+    }
+    
+    .advantages__section{
+        background-image: none;
+        background-color: #0F0F0F;;
+        min-height: 100vh;
+        padding: 162px 0;
+        /* padding-bottom: 140px; */
+    }
+
+    .heading__advantages{
+        display: none;
+    }
+
+    .advantages__cards{
+        display: block;
+    }
+
+    .advantages__card{
+        border-radius: 0px;
+        background-color: transparent;
+        margin: 0 auto;
+        max-width: fit-content;
+        margin-bottom: 48px;
+    }
+    .advantages__card:last-child{
+        margin: 0 auto;
+    }
+
+    .adv__card-icon{
+        display: none;
+    }
+
+    .adv__card-icon-mobile{
+        display: block;
+        margin: 0 auto 10px auto;
+    }
+
+    .adv__card-desc{
+        font-weight: 700;
+        font-size: 4vh;
+        line-height: 5vh;
+        text-align: center;
+        color: #fff;
+    }
+    /* advantages */
+
+    /* sport food info */
+
+    .sport__food__info{
+        margin: 72px 0;
+    }
+
+    .header__food{
+        margin-bottom: 36px;
+    }
+
+    .header__food-text{
+        font-size: 5vh;
+        line-height: 6.5vh;
+    }
+
+    .food__desc{
+        font-size: 3.8vh;
+        line-height: 4.2vh;
+        margin-bottom: 37px;
+    }
+
+    .slider{
+        max-width: 360px;
+    }
+
+    .card{
+        flex: 0 0 100%;
+    }
+    
+    .shipping__info__section{
+        padding: 72px 0;
+    }
+
+
+    .shipping__heading{
+        font-size: 6vh;
+        line-height: 7vh;
+        margin-bottom: 29px;
+    }
+
+    .shipping__info{
+        font-size: 3.5vh;
+        line-height: 4vh;
+        margin-bottom: 50px;
+    }
+
+    .shipping__logo{
+        margin-right: unset;
+        display: block;
+        margin: 0 auto 50px auto;
+    }
+
+    .shipping__logo:last-child{
+        margin: 0 auto;
+    }
+
+    /* shipping */
+
+    /* why we */
+
+    .why__we__section{
+        margin: 95px auto;
+    }
+
+    .why__we__heading{
+        font-size: 6vh;
+        line-height: 7vh;
+        margin-bottom: 40px;
+    }
+
+    .why__we-list__item__text{
+        font-size: 4vh;
+        line-height: 4.5vh;
+    }
+
+    /* why we */
+
+    /* footer */
+
+    .footer{
+        background-color: #090808;
+        padding-top: 41px;
+    }
+
+    .footer__info{
+        margin-bottom: 32px;
+    }
+
+    .footer__nav{
+        margin-bottom: 32px;
+    }
+
+    .footer__logo{
+        margin-bottom: 35px;
+    }
+
+    .footer__logo_big{
+        max-width: 142px;
+    }
+
+    .info{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer__nav-link{
+        font-weight: 300;
+        font-size: 2.2vh;
+        line-height: 2.6vh;
+    }
+
+    .footer__info__list-item{
+        margin-bottom: 5px;
+    }
+
+    .footer__info__list-item_big_spacing{
+        text-align: center;
+    }
+
+    .footer__info__heading{
+        font-weight: 500;
+        font-size: 2.6vh;
+        line-height: 3.2vh;
+        margin-bottom: 5px;
+    }
+
+    .footer__info__text{
+        font-weight: 300;
+        font-size: 2.2vh;
+        line-height: 2.6vh;
+    }
+
+    .social__icon{
+        margin-right: 8px;
+        width: 22px;
+        height: 22px;
+    }
+
+    .social__media__title{
+        font-weight: 500;
+        font-size: 2.4vh;
+        line-height: 3vh;
+    }
+
+    .footer__social-link{
+        font-weight: 300;
+        font-size: 2.2vh;
+        line-height: 2.8vh;
+    }
+
+    .copyright{
+        font-weight: 200;
+        margin-top: 46px;
+        font-size: 2vh;
+        line-height: 2.6vh;
+    }
+
 }

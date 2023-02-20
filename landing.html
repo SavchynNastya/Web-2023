@@ -10,10 +10,10 @@
 <body>
     <header class="header">
         <div class="header__logo">
-                <a href="/" class="header__logo-link">
-                    <img class="logo__svg" src="img/svg/logo.svg" alt="logo">
-                </a>
-            </div>
+            <a href="/" class="header__logo-link">
+                <img class="logo__svg" src="img/svg/logo.svg" alt="logo">
+            </a>
+        </div>
         <div class="wrapper">
             <nav class="header__nav">
                 <ul class="nav__links">
@@ -27,16 +27,16 @@
                         <a href="#contacts" class="header__link js-scroll">Контакти</a>
                     </li>
                     <li class="header__item">
-                        <a href="#" class="header__link js-scroll">Головна</a>
+                        <a href="#" class="header__link">Головна</a>
                     </li>
-                    <li class="header__item">
-                        <a href="#" class="header__link hidden__link">Пошук</a>
+                    <li class="header__item hidden__link">
+                        <a href="#" class="header__link">Пошук</a>
                     </li>
-                    <li class="header__item">
-                        <a href="#" class="header__link hidden__link">Корзина</a>
+                    <li class="header__item hidden__link">
+                        <a href="#" class="header__link">Корзина</a>
                     </li>
-                    <li class="header__item">
-                        <a href="#" class="header__link hidden__link">Авторизуватися</a>
+                    <li class="header__item hidden__link">
+                        <a href="#" class="header__link">Авторизуватися</a>
                     </li> 
                 </ul>
                 <div class="header__nav-close">
@@ -51,9 +51,6 @@
             </div>
         </div>
         <ul class="header__nav nav__links">
-            <!-- <li class="header__item header__icon_item">
-                <img src="img/svg/search.svg" class="header__icon" alt="search__icon"/>
-            </li> -->
             <li class="header__item header__icon_item">
                 <img src="img/svg/cart.svg" class="header__icon" alt="search__icon"/>
             </li>
@@ -91,18 +88,21 @@
                 <div class="advantages__cards">
                     <div class="advantages__card">
                         <img src="img/svg/card_icon1.svg" alt="weightlifting" class="adv__card-icon">
+                        <img src="img/svg/adv__card-icon-white1.svg" alt="" class="adv__card-icon-mobile">
                         <p class="adv__card-desc">Завдяки обладнанню
                         ви <span class="adv__accent-text">швидше досягнете результату</span>. 
                         Консультанти допоможуть Вам у виборі.</p>
                     </div>
                     <div class="advantages__card">
                         <img src="img/svg/card_icon2.svg" alt="guarantee" class="adv__card-icon">
+                        <img src="img/svg/adv__card-icon-white2.svg" alt="" class="adv__card-icon-mobile">
                         <p class="adv__card-desc">Наш товар має
                         <span class="adv__accent-text">гарантію якості</span> та підлягає заміні. 
                         Спортсмени надають перевагу саме нашому обладнанню.</p>
                     </div>
                     <div class="advantages__card">
                         <img src="img/svg/card_icon3.svg" alt="dumbbell" class="adv__card-icon">
+                        <img src="img/svg/adv__card-icon-white3.svg" alt="" class="adv__card-icon-mobile">
                         <p class="adv__card-desc">До кожного спортивного знаряддя у 
                         <span class="adv__accent-text">подарунок</span> інструкція з порадами та чохол для зберігання.</p>
                     </div>
@@ -115,213 +115,146 @@
                     <h3 class="header__food-text">Спортивне харчування в наявності</h3>
                 </div>
                 <p class="food__desc">Правильне харчування - це 70% успіху при тренуванні. Щоденної їжі не завжди достатньо, щоб збагатити організм необхідними мікроелементами, а також білком, жирами, та вітамінами. Саме тому варто звернути увагу на спортивне харчування. </p>
+
                 <!-- SLIDER -->
                 <div class="slider">
-                    <input checked='checked' class='carousel__activator' id='carousel-slide-activator-1' name='carousel' type='radio'>
-                    <input class='carousel__activator' id='carousel-slide-activator-2' name='carousel' type='radio'>
-                    <input class='carousel__activator' id='carousel-slide-activator-3' name='carousel' type='radio'>
-                    
-                    <div class='carousel__controls'>
-                        <label class='carousel__control control__right' for='carousel-slide-activator-2'>
-                            <img src="./img/svg/slider__tick.svg" alt="" class="">
-                        </label>
-                    </div>
-                    <div class='carousel__controls'>
-                        <label class='carousel__control control__left' for='carousel-slide-activator-1'>
-                            <img src="./img/svg/slider__tick.svg" alt="" class="">
-                        </label>
-                        <label class='carousel__control control__right' for='carousel-slide-activator-3'>
-                            <img src="./img/svg/slider__tick.svg" alt="" class="">
-                        </label>
-                    </div>
-                    <div class='carousel__controls'>
-                        <label class='carousel__control control__left' for='carousel-slide-activator-2'>
-                            <img src="./img/svg/slider__tick.svg" alt="" class="">
-                        </label>
-                    </div>
-
-                    <div class='carousel__screen'>
-                        <div class='carousel__track'>
-
-                            <div class="card slider__item__mobile-1 carousel__item__tablet-2 carousel__item__desktop-3">
-                                <div class="item__card">
-                                    <div class="card__content">
-                                        <div class="img__container">
-                                            <button class="like__item-button">
-                                                <img src="img/svg/item_like.svg" alt="like__item" class="like__item">
-                                            </button>
-                                            <img src="img/item_img.jpg" alt="item_img" class="item__img">
-                                        </div>
-                                        <p class="item__name">Соєвий протеїн зі смаком шоколаду PowerPro 1000г</p>
-                                        <p class="item__cost">860 UAH</p>
+                    <div class="slider__wrapper">
+                        <div class="card">
+                            <div class="item__card">
+                                <div class="card__content">
+                                    <div class="img__container">
+                                        <img src="img/item_img.jpg" alt="item_img" class="item__img">
                                     </div>
-                                </div>
-                            </div>
-
-                            <div class="card slider__item__mobile-1 carousel__item__tablet-2 carousel__item__desktop-3">
-                                <div class="item__card">
-                                    <div class="card__content">
-                                        <div class="img__container">
-                                            <button class="like__item-button">
-                                                <img src="img/svg/item_like.svg" alt="like__item" class="like__item">
-                                            </button>
-                                            <img src="img/item_img.jpg" alt="item_img" class="item__img">
-                                        </div>
-                                        <p class="item__name">Соєвий протеїн зі смаком шоколаду PowerPro 1000г</p>
-                                        <p class="item__cost">860 UAH</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="card slider__item__mobile-1 carousel__item__tablet-2 carousel__item__desktop-3">
-                                <div class="item__card">
-                                    <div class="card__content">
-                                        <div class="img__container">
-                                            <button class="like__item-button">
-                                                <img src="img/svg/item_like.svg" alt="like__item" class="like__item">
-                                            </button>
-                                            <img src="img/item_img.jpg" alt="item_img" class="item__img">
-                                        </div>
-                                        <p class="item__name">Соєвий протеїн зі смаком шоколаду PowerPro 1000г</p>
-                                        <p class="item__cost">860 UAH</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="card slider__item__mobile-1 carousel__item__tablet-2 carousel__item__desktop-3">
-                                <div class="item__card">
-                                    <div class="card__content">
-                                        <div class="img__container">
-                                            <button class="like__item-button">
-                                                <img src="img/svg/item_like.svg" alt="like__item" class="like__item">
-                                            </button>
-                                            <img src="img/item_img.jpg" alt="item_img" class="item__img">
-                                        </div>
-                                        <p class="item__name">Соєвий протеїн зі смаком шоколаду PowerPro 1000г</p>
-                                        <p class="item__cost">860 UAH</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="card slider__item__mobile-1 carousel__item__tablet-2 carousel__item__desktop-3">
-                                <div class="item__card">
-                                    <div class="card__content">
-                                        <div class="img__container">
-                                            <button class="like__item-button">
-                                                <img src="img/svg/item_like.svg" alt="like__item" class="like__item">
-                                            </button>
-                                            <img src="img/item_img.jpg" alt="item_img" class="item__img">
-                                        </div>
-                                        <p class="item__name">Соєвий протеїн зі смаком шоколаду PowerPro 1000г</p>
-                                        <p class="item__cost">860 UAH</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="card slider__item__mobile-1 carousel__item__tablet-2 carousel__item__desktop-3">
-                                <div class="item__card">
-                                    <div class="card__content">
-                                        <div class="img__container">
-                                            <button class="like__item-button">
-                                                <img src="img/svg/item_like.svg" alt="like__item" class="like__item">
-                                            </button>
-                                            <img src="img/item_img.jpg" alt="item_img" class="item__img">
-                                        </div>
-                                        <p class="item__name">Соєвий протеїн зі смаком шоколаду PowerPro 1000г</p>
-                                        <p class="item__cost">860 UAH</p>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div class="card slider__item__mobile-1 carousel__item__tablet-2 carousel__item__desktop-3">
-                                <div class="item__card">
-                                    <div class="card__content">
-                                        <div class="img__container">
-                                            <button class="like__item-button">
-                                                <img src="img/svg/item_like.svg" alt="like__item" class="like__item">
-                                            </button>
-                                            <img src="img/item_img.jpg" alt="item_img" class="item__img">
-                                        </div>
-                                        <p class="item__name">Соєвий протеїн зі смаком шоколаду PowerPro 1000г</p>
-                                        <p class="item__cost">860 UAH</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="card slider__item__mobile-1 carousel__item__tablet-2 carousel__item__desktop-3">
-                                <div class="item__card">
-                                    <div class="card__content">
-                                        <div class="img__container">
-                                            <button class="like__item-button">
-                                                <img src="img/svg/item_like.svg" alt="like__item" class="like__item">
-                                            </button>
-                                            <img src="img/item_img.jpg" alt="item_img" class="item__img">
-                                        </div>
-                                        <p class="item__name">Соєвий протеїн зі смаком шоколаду PowerPro 1000г</p>
-                                        <p class="item__cost">860 UAH</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="card slider__item__mobile-1 carousel__item__tablet-2 carousel__item__desktop-3">
-                                <div class="item__card">
-                                    <div class="card__content">
-                                        <div class="img__container">
-                                            <button class="like__item-button">
-                                                <img src="img/svg/item_like.svg" alt="like__item" class="like__item">
-                                            </button>
-                                            <img src="img/item_img.jpg" alt="item_img" class="item__img">
-                                        </div>
-                                        <p class="item__name">Соєвий протеїн зі смаком шоколаду PowerPro 1000г</p>
-                                        <p class="item__cost">860 UAH</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="card slider__item__mobile-1 carousel__item__tablet-2 carousel__item__desktop-3">
-                                <div class="item__card">
-                                    <div class="card__content">
-                                        <div class="img__container">
-                                            <button class="like__item-button">
-                                                <img src="img/svg/item_like.svg" alt="like__item" class="like__item">
-                                            </button>
-                                            <img src="img/item_img.jpg" alt="item_img" class="item__img">
-                                        </div>
-                                        <p class="item__name">Соєвий протеїн зі смаком шоколаду PowerPro 1000г</p>
-                                        <p class="item__cost">860 UAH</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card slider__item__mobile-1 carousel__item__tablet-2 carousel__item__desktop-3">
-                                <div class="item__card">
-                                    <div class="card__content">
-                                        <div class="img__container">
-                                            <button class="like__item-button">
-                                                <img src="img/svg/item_like.svg" alt="like__item" class="like__item">
-                                            </button>
-                                            <img src="img/item_img.jpg" alt="item_img" class="item__img">
-                                        </div>
-                                        <p class="item__name">Соєвий протеїн зі смаком шоколаду PowerPro 1000г</p>
-                                        <p class="item__cost">860 UAH</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="card slider__item__mobile-1 carousel__item__tablet-2 carousel__item__desktop-3">
-                                <div class="item__card">
-                                    <div class="card__content">
-                                        <div class="img__container">
-                                            <button class="like__item-button">
-                                                <img src="img/svg/item_like.svg" alt="like__item" class="like__item">
-                                            </button>
-                                            <img src="img/item_img.jpg" alt="item_img" class="item__img">
-                                        </div>
-                                        <p class="item__name">Соєвий протеїн зі смаком шоколаду PowerPro 1000г</p>
-                                        <p class="item__cost">860 UAH</p>
-                                    </div>
+                                    <p class="item__name">Соєвий протеїн зі смаком шоколаду PowerPro 1000г</p>
+                                    <p class="item__cost">860 UAH</p>
                                 </div>
                             </div>
                         </div>
+                        <div class="card">
+                            <div class="item__card">
+                                <div class="card__content">
+                                    <div class="img__container">
+                                        <img src="img/item_img.jpg" alt="item_img" class="item__img">
+                                    </div>
+                                    <p class="item__name">Соєвий протеїн зі смаком шоколаду PowerPro 1000г</p>
+                                    <p class="item__cost">860 UAH</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="item__card">
+                                <div class="card__content">
+                                    <div class="img__container">
+                                        <img src="img/item_img.jpg" alt="item_img" class="item__img">
+                                    </div>
+                                    <p class="item__name">Соєвий протеїн зі смаком шоколаду PowerPro 1000г</p>
+                                    <p class="item__cost">860 UAH</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="item__card">
+                                <div class="card__content">
+                                    <div class="img__container">
+                                        <img src="img/item_img.jpg" alt="item_img" class="item__img">
+                                    </div>
+                                    <p class="item__name">Соєвий протеїн зі смаком шоколаду PowerPro 1000г</p>
+                                    <p class="item__cost">860 UAH</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="item__card">
+                                <div class="card__content">
+                                    <div class="img__container">
+                                        <img src="img/item_img.jpg" alt="item_img" class="item__img">
+                                    </div>
+                                    <p class="item__name">Соєвий протеїн зі смаком шоколаду PowerPro 1000г</p>
+                                    <p class="item__cost">860 UAH</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="item__card">
+                                <div class="card__content">
+                                    <div class="img__container">
+                                        <img src="img/item_img.jpg" alt="item_img" class="item__img">
+                                    </div>
+                                    <p class="item__name">Соєвий протеїн зі смаком шоколаду PowerPro 1000г</p>
+                                    <p class="item__cost">860 UAH</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="item__card">
+                                <div class="card__content">
+                                    <div class="img__container">
+                                        <img src="img/item_img.jpg" alt="item_img" class="item__img">
+                                    </div>
+                                    <p class="item__name">Соєвий протеїн зі смаком шоколаду PowerPro 1000г</p>
+                                    <p class="item__cost">860 UAH</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="item__card">
+                                <div class="card__content">
+                                    <div class="img__container">
+                                        <img src="img/item_img.jpg" alt="item_img" class="item__img">
+                                    </div>
+                                    <p class="item__name">Соєвий протеїн зі смаком шоколаду PowerPro 1000г</p>
+                                    <p class="item__cost">860 UAH</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="item__card">
+                                <div class="card__content">
+                                    <div class="img__container">
+                                        <img src="img/item_img.jpg" alt="item_img" class="item__img">
+                                    </div>
+                                    <p class="item__name">Соєвий протеїн зі смаком шоколаду PowerPro 1000г</p>
+                                    <p class="item__cost">860 UAH</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="item__card">
+                                <div class="card__content">
+                                    <div class="img__container">
+                                        <img src="img/item_img.jpg" alt="item_img" class="item__img">
+                                    </div>
+                                    <p class="item__name">Соєвий протеїн зі смаком шоколаду PowerPro 1000г</p>
+                                    <p class="item__cost">860 UAH</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="item__card">
+                                <div class="card__content">
+                                    <div class="img__container">
+                                        <img src="img/item_img.jpg" alt="item_img" class="item__img">
+                                    </div>
+                                    <p class="item__name">Соєвий протеїн зі смаком шоколаду PowerPro 1000г</p>
+                                    <p class="item__cost">860 UAH</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="item__card">
+                                <div class="card__content">
+                                    <div class="img__container">
+                                        <img src="img/item_img.jpg" alt="item_img" class="item__img">
+                                    </div>
+                                    <p class="item__name">Соєвий протеїн зі смаком шоколаду PowerPro 1000г</p>
+                                    <p class="item__cost">860 UAH</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider__control-bar">
+                        <button class="prev-button"><img src="./img/svg/slider__tick.svg" alt="" class="control__left"></button>
+                        <button class="next-button"><img src="./img/svg/slider__tick.svg" alt="" class="control__right"></button>
                     </div>
                 </div>
                 <!-- SLIDER -->
