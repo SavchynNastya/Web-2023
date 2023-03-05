@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SportWorld</title>
+    <link rel="stylesheet" href="./base.css">
+    <link rel="stylesheet" href="./cart.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header__logo">
+                <a href="/" class="header__logo-link">
+                    <img class="logo__svg" src="img/svg/logo.svg" alt="logo">
+                </a>
+            </div>
+        <div class="wrapper">
+            <nav class="header__nav">
+                <div class="search__container">
+                    <form action="" class="search__container-form">
+                        <input type="text" class="input__search-field" placeholder="Введіть назву товару..." name="search">
+                        <button type="submit" class="search__button"><img src="./img/svg/search.svg" alt="" class="search__button-img"></button>
+                    </form>
+                </div>
+            </nav>
+            <div class="header__burger burger">
+                <span class="header__burger-line header__burger-line-first"></span>
+                <span class="header__burger-line header__burger-line-second"></span>
+                <span class="header__burger-line header__burger-line-third"></span>
+            </div>
+        </div>
+        <ul class="header__nav nav__links">
+            <li class="header__icon_item">
+                <img src="img/svg/nav_like.svg" class="header__icon" alt="like__icon"/>
+                <a href="#" class="nav__link-name">Вподобані товари</a>
+            </li>
+            <li class="header__icon_item">
+                <img src="img/svg/cart.svg" class="header__icon cart" alt="cart__icon"/>
+                <a href="#" class="nav__link-name">Кошик</a>
+            </li>
+            <li class="header__icon_item">
+                <img src="img/svg/profile.svg" class="header__icon" alt="profile__icon"/>
+                <a href="#" class="nav__link-name">Авторизуватися</a>
+            </li>
+            <div class="header__nav-close">
+                <span class="header__burger-line-close"></span>
+                <span class="header__burger-line-close"></span>
+            </div>
+        </ul>
+    </header>
+    <main class="main">
+        <div class="wrapper">
+            <h1 class="page__heading">Кошик</h1>
+            <p class="items__quanity">Всього: <span class="quantity-value">1</span></p>
+            <div class="cart__container">
+                <div class="items__container">
+                    <div class="item__card">
+                        <div class="card__content">
+                            <div class="img__container">
+                                <img src="img/item_img.jpg" alt="item_img" class="item__img">
+                            </div>
+                            <div class="control__buttons">
+                                <button class="like__item-button">
+                                    <img src="img/svg/item_like.svg" alt="like__item" class="like__item">
+                                </button>
+                                <button class="delete__item-button">
+                                    <img src="img/svg/delete-item.svg" alt="delete__item" class="delete__item">
+                                </button>
+                            </div>
+                            <div class="item__info">
+                                <p class="item__name">Соєвий протеїн зі смаком шоколаду PowerPro 1000г</p>
+                                <p class="item__desc-short">
+                                    Whey Protein від Power Pro – ситний, знежирений протеїновий коктейль з ніжним смаком та ароматом. Запатентована компанією Power Pro пудроподібна текстура протеїну повністю, без грудок, розчиняється не тільки в молоці, але й у воді, зберігаючи коктейль таким же смачним і таким, що насичує.
+                                </p>
+                                <div class="summary-row">
+                                    <span class="item__cost">860 UAH</span>
+                                    <span class="quantity">
+                                        <span class="quantity-text">Кількість</span>
+                                        <input type="number" class="items__quantity-input" value="3" name="items__quantity"/>
+                                        <button class="change__quantity increase">+</button>
+                                        <button class="change__quantity descrease">-</button>
+                                    </span>
+                                    <span class="summary__pricing">
+                                        <span class="summary__pricing-text">Всього:</span>
+                                        <span class="summary__pricing-value">2448 UAH</span>
+                                    </span>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="cart__summary">
+                    <div class="summary__block">
+                        <p class="summary-text">Загальна ціна товарів: <span class="cart__summary-value">2448 UAH</span></p>
+                    </div>
+                    <p class="select__payment">Оберіть зручний спосіб оплати</p>
+                    <div class="payment__methods">
+                        <img src="./img/svg/paypal.svg" alt="payment method" class="method">
+                        <img src="./img/svg/mastercard.svg" alt="payment method" class="method">
+                        <img src="./img/svg/visa.svg" alt="payment method" class="method">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="wrapper__footer">
+            <div class="footer__logo">
+                <img src="img/svg/logo_big.svg" alt="logo_big" class="footer__logo_big">
+            </div>
+            <div class="info">
+                <ul class="footer__info">
+                    <li class="footer__info__list-item_big_spacing">
+                        <h5 class="footer__info__heading">Адреса магазину</h5>
+                        <p class="footer__info__text">м. Київ, вул. Хрещатик 35</p>
+                    </li>
+                    <li class="footer__info__list-item_big_spacing">
+                        <h5 class="footer__info__heading">Електронна пошта</h5>
+                        <p class="footer__info__text">sportwrld@gmail.com</p>
+                    </li>
+                    <li class="footer__info__list-item_big_spacing">
+                        <h5 class="footer__info__heading">Номер телефону</h5>
+                        <p class="footer__info__text">+38(093)-194-22-11</p>
+                    </li>
+                </ul>
+                <ul class="footer__nav">
+                    <li class="footer__info__list-item">
+                        <h5 class="footer__info__heading">Навігація</h5>
+                    </li>
+                    <li class="footer__info__list-item"><a href="#" class="footer__nav-link">Головна</a></li>
+                    <li class="footer__info__list-item"><a href="#" class="footer__nav-link">Про нас</a></li>
+                    <li class="footer__info__list-item"><a href="#" class="footer__nav-link">Співпраця</a></li>
+                </ul>
+                <div class="social__media">
+                    <div class="social__media__item">
+                        <img src="img/svg/insta.svg" alt="" class="social__icon">
+                        <h5 class="social__media__title">Instagram</h5>
+                        <a href="#" class="footer__social-link">@sportwrld</a>
+                    </div>
+                    <div class="social__media__item">
+                        <img src="img/svg/twitter.svg" alt="" class="social__icon">
+                        <h5 class="social__media__title">Twitter</h5>
+                        <a href="#" class="footer__social-link">@sportwrld</a>
+                    </div>
+                </div>
+            </div>
+            <p class="copyright">© 2022 Sport World. All rights reserved.</p>
+        </div>
+    </footer>
+    <script type="text/javascript" src="./main.js"></script>
+</body>
+</html>
