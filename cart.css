@@ -257,11 +257,13 @@
 }
 
 @media screen and (max-width: 1085px){
+    .main{
+        min-height: calc(100vh - 426.5px);
+    }
     .cart__container{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        min-height: 61vh;
     }
     .cart__summary{
         margin: 0 auto;
