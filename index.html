@@ -27,10 +27,7 @@
                         <a href="#contacts" class="header__link js-scroll">Контакти</a>
                     </li>
                     <li class="header__item">
-                        <a href="#" class="header__link">Головна</a>
-                    </li>
-                    <li class="header__item hidden__link">
-                        <a href="#" class="header__link">Пошук</a>
+                        <a href="main.html" class="header__link">Головна</a>
                     </li>
                     <li class="header__item hidden__link">
                         <a href="#" class="header__link">Кошик</a>
@@ -51,14 +48,14 @@
             </div>
         </div>
         <ul class="header__nav nav__links">
-            <li class="header__item header__icon_item">
-                <img src="img/svg/nav_like.svg" class="header__icon" alt="search__icon"/>
+            <li class="header__item header__icon_item" onclick="location.href='liked.html';">
+                <img src="img/svg/nav_like.svg" class="header__icon" alt="like__icon"/>
+            </li>
+            <li class="header__item header__icon_item" onclick="location.href='cart.html';">
+                <img src="img/svg/cart.svg" class="header__icon" alt="cart__icon"/>
             </li>
             <li class="header__item header__icon_item">
-                <img src="img/svg/cart.svg" class="header__icon" alt="search__icon"/>
-            </li>
-            <li class="header__item header__icon_item">
-                <img src="img/svg/profile.svg" class="header__icon" alt="search__icon"/>
+                <img src="img/svg/profile.svg" class="header__icon" alt="profile__icon"/>
             </li>
         </ul>
     </header>
@@ -189,7 +186,7 @@
                 <!-- SLIDER -->
                 <div class="slider">
                     <div class="slider__wrapper">
-                        <div class="card">
+                        <div class="card" onclick="location.href='item_page.html';">
                             <div class="item__card">
                                 <div class="card__content">
                                     <div class="img__container">
