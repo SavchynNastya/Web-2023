@@ -659,12 +659,14 @@ span.dot:last-child {
     cursor: pointer;
     margin: 0 auto;
     z-index: 1;
+
+    position: relative;
 }
 
 .card__content{
     display: flex;
     flex-direction: column;
-    position: relative;
+    /* position: relative; */
 }
 
 .img__container{
@@ -693,8 +695,10 @@ span.dot:last-child {
     background: none;
     border: none;
     position: absolute;
-    top: -7px;
-    right: -7px;
+    /* top: -7px;
+    right: -7px; */
+    top: 7px;
+    right: 7px;
     width: 35px;
     height: 34px;
 }
@@ -704,8 +708,10 @@ span.dot:last-child {
     background: none;
     border: none;
     position: absolute;
-    bottom: -7px;
-    right: -7px;  
+    /* bottom: -7px;
+    right: -7px;   */
+    bottom: 7px;
+    right: 7px; 
 }
 
 .item__name{

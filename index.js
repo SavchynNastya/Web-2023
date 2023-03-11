@@ -109,6 +109,23 @@
 })();
 
 
+(function () {
+  const likeItemButton = document.querySelectorAll(".like__item-button");
+  console.log(likeItemButton);
+  likeItemButton.forEach((likeButton) => {
+    likeButton.addEventListener("click", () => {
+      let likeButtonIcon = likeButton.querySelector(".like__item");
+      console.log(likeButtonIcon);
+      if (likeButtonIcon.src.includes("/img/svg/item_liked.svg")) {
+        likeButtonIcon.src = "/img/svg/item_like.svg";
+      } else {
+        likeButtonIcon.src = "/img/svg/item_liked.svg";
+      }
+    });
+  });
+})();
+
+
 // (function (){
 //   slides = document.querySelectorAll(".slide");
 //   dots = document.querySelectorAll(".dot");

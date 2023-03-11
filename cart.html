@@ -57,7 +57,7 @@
                 <div class="items__container">
                     <div class="item__card">
                         <div class="card__content">
-                            <div class="img__container">
+                            <div class="img__container" onclick="location.href='item_page.html';">
                                 <img src="img/item_img.jpg" alt="item_img" class="item__img">
                             </div>
                             <div class="control__buttons">
@@ -77,9 +77,9 @@
                                     <span class="item__cost">860 UAH</span>
                                     <span class="quantity">
                                         <span class="quantity-text">Кількість</span>
-                                        <input type="text" class="items__quantity-input" value="3" name="items__quantity"/>
+                                        <input type="text" class="items__quantity-input" value="3" name="items__quantity" readonly/>
                                         <button class="change__quantity increase">+</button>
-                                        <button class="change__quantity descrease">-</button>
+                                        <button class="change__quantity decrease">-</button>
                                     </span>
                                     <span class="summary__pricing">
                                         <span class="summary__pricing-text">Всього:</span>
@@ -149,6 +149,6 @@
             <p class="copyright">© 2022 Sport World. All rights reserved.</p>
         </div>
     </footer>
-    <script type="text/javascript" src="./main.js"></script>
+    <script type="text/javascript" src="./cart.js"></script>
 </body>
 </html>

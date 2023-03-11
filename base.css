@@ -317,8 +317,10 @@ img{
     background: none;
     border: none;
     position: absolute;
-    top: -7px;
-    right: -7px;
+    /* top: -7px;
+    right: -7px; */
+    top: 7px;
+    right: 7px;
     width: 35px;
     height: 34px;
 }
@@ -328,8 +330,10 @@ img{
     background: none;
     border: none;
     position: absolute;
-    bottom: -7px;
-    right: -7px;  
+    /* bottom: -7px;
+    right: -7px;   */
+    bottom: 7px;
+    right: 7px;  
 }
 
 .item__name{

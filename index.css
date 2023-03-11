@@ -509,13 +509,16 @@ img{
     border-radius: 10px;
     padding: 15px;
     cursor: pointer;
-}
+    margin: 0 auto;
+    z-index: 1;
 
+    position: relative;
+}
 
 .card__content{
     display: flex;
     flex-direction: column;
-    position: relative;
+    /* position: relative; */
 }
 
 .img__container{
@@ -524,7 +527,6 @@ img{
     margin-bottom: 10px;
 }
 
-
 .item__img{
     height: 100%;
     width: 100%;
@@ -532,9 +534,12 @@ img{
     border-radius: 10px;
 }
 
+/* .like__item{
+
+} */
 
 .item__card button{
-    z-index: 4;
+    z-index: 10;
 }
 
 .like__item-button{
@@ -542,8 +547,10 @@ img{
     background: none;
     border: none;
     position: absolute;
-    top: 0px;
-    right: 0px;
+    /* top: -7px;
+    right: -7px; */
+    top: 7px;
+    right: 7px;
     width: 35px;
     height: 34px;
 }
@@ -553,8 +560,10 @@ img{
     background: none;
     border: none;
     position: absolute;
-    bottom: 0;
-    right: 0;  
+    /* bottom: -7px;
+    right: -7px;   */
+    bottom: 7px;
+    right: 7px; 
 }
 
 .item__name{
@@ -562,7 +571,7 @@ img{
     font-size: 14px;
     line-height: 16px;
     color: #3E3E3E;
-    height: 55px;
+    max-height: 55px;
     margin-bottom: 5px;
 }
 
@@ -572,7 +581,6 @@ img{
     line-height: 18px;
     color: #0A0909;
 }
-
 
 /* slider */
 
@@ -603,7 +611,7 @@ img{
     top: 0px;
     left: 0;
     bottom: 0px;
-    z-index: 1;
+    z-index: 11;
 }
 
 .slider::after{
@@ -614,21 +622,21 @@ img{
     /* width: 4.375rem; */
     position: absolute;
     top: 0px;
-    right: 0;
+    right: -10px;
     bottom: 0px;
-    z-index: 1;
+    z-index: 11;
 }
 
 .prev-button, .next-button{
     background: transparent;
     border: none;
+    z-index: 12;
 }
 
 .prev-button{
     position: absolute;
     top: 40%;
     left: 0%;
-    z-index: 10;
 }
 
 .next-button{
@@ -636,7 +644,6 @@ img{
     transform: rotate(180deg);
     top: 40%;
     right: 0;
-    z-index: 10;
 }
 
 /* slider */
