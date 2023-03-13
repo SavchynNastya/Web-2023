@@ -5,8 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SportWorld</title>
+    <!-- <link rel="stylesheet" href="./cart.css"> -->
     <link rel="stylesheet" href="./base.css">
-    <link rel="stylesheet" href="./cart.css">
+    <!-- <link rel="stylesheet" href="./cart.css"> -->
 </head>
 <body>
     <header class="header">
@@ -52,38 +53,38 @@
     <main class="main">
         <div class="wrapper">
             <h1 class="page__heading">Кошик</h1>
-            <p class="items__quanity">Всього: <span class="quantity-value">1</span></p>
+            <p class="cart__items__quanity">Всього: <span class="quantity-value">1</span></p>
             <div class="cart__container">
-                <div class="items__container">
-                    <div class="item__card">
-                        <div class="card__content">
-                            <div class="img__container" onclick="location.href='item_page.html';">
-                                <img src="img/item_img.jpg" alt="item_img" class="item__img">
+                <div class="cart__items__container">
+                    <div class="cart__item__card">
+                        <div class="cart__card__content">
+                            <div class="cart__img__container" onclick="location.href='item_page.html';">
+                                <img src="img/item_img.jpg" alt="item_img" class="cart__item__img">
                             </div>
-                            <div class="control__buttons">
-                                <button class="like__item-button">
+                            <div class="cart__control__buttons">
+                                <button class="cart__like__item-button">
                                     <img src="img/svg/item_like.svg" alt="like__item" class="like__item">
                                 </button>
-                                <button class="delete__item-button">
+                                <button class="cart__delete__item-button">
                                     <img src="img/svg/delete-item.svg" alt="delete__item" class="delete__item">
                                 </button>
                             </div>
-                            <div class="item__info">
-                                <p class="item__name">Соєвий протеїн зі смаком шоколаду PowerPro 1000г</p>
-                                <p class="item__desc-short">
+                            <div class="cart__item__info">
+                                <p class="cart__item__name">Соєвий протеїн зі смаком шоколаду PowerPro 1000г</p>
+                                <p class="cart__item__desc-short">
                                     Whey Protein від Power Pro – ситний, знежирений протеїновий коктейль з ніжним смаком та ароматом. Запатентована компанією Power Pro пудроподібна текстура протеїну повністю, без грудок, розчиняється не тільки в молоці, але й у воді, зберігаючи коктейль таким же смачним і таким, що насичує.
                                 </p>
-                                <div class="summary-row">
-                                    <span class="item__cost">860 UAH</span>
-                                    <span class="quantity">
-                                        <span class="quantity-text">Кількість</span>
+                                <div class="cart__summary-row">
+                                    <span class="item__cost cart__item__cost">860 UAH</span>
+                                    <span class="cart__quantity">
+                                        <span class="cart__quantity-text">Кількість</span>
                                         <input type="text" class="items__quantity-input" value="3" name="items__quantity" readonly/>
                                         <button class="change__quantity increase">+</button>
                                         <button class="change__quantity decrease">-</button>
                                     </span>
-                                    <span class="summary__pricing">
-                                        <span class="summary__pricing-text">Всього:</span>
-                                        <span class="summary__pricing-value">2448 UAH</span>
+                                    <span class="cart__summary__pricing">
+                                        <span class="cart__summary__pricing-text">Всього:</span>
+                                        <span class="cart__summary__pricing-value">2448 UAH</span>
                                     </span>
                                 </div>
                             </div>
@@ -92,8 +93,8 @@
                     </div>
                 </div>
                 <div class="cart__summary">
-                    <div class="summary__block">
-                        <p class="summary-text">Загальна ціна товарів: <span class="cart__summary-value">2448 UAH</span></p>
+                    <div class="cart__summary__block">
+                        <p class="cart__summary-text">Загальна ціна товарів: <span class="cart__summary-value">2448 UAH</span></p>
                     </div>
                     <p class="select__payment">Оберіть зручний спосіб оплати</p>
                     <div class="payment__methods">

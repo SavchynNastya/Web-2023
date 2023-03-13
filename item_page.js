@@ -1,8 +1,12 @@
-const descHeadings = document.querySelectorAll(".item__desc-heading");
+const descHeadings = document.querySelectorAll(
+  ".item-page__item__desc-heading"
+);
 
 descHeadings.forEach((descHeading) => {
     descHeading.addEventListener("click", () => {
-        const description = document.querySelector(".item__desc-text");
+        const description = document.querySelector(
+          ".item-page__item__desc-text"
+        );
 
         if (description.style.display === "none") {
         description.style.display = "block";
