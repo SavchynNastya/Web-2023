@@ -45,10 +45,11 @@ img {
 	justify-content: space-between;
 }
 .header__nav {
+	display: flex;
 	justify-content: space-between;
 }
 .nav__links {
-	// display: flex;
+	display: flex;
 	align-items: center;
 	flex-wrap: wrap;
 	list-style-type: none;
