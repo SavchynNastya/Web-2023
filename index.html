@@ -10,7 +10,7 @@
 <body>
     <header class="header">
         <div class="header__logo">
-            <a href="/" class="header__logo-link">
+            <a href="main.html" class="header__logo-link">
                 <img class="logo__svg" src="img/svg/logo.svg" alt="logo">
             </a>
         </div>
@@ -29,9 +29,12 @@
                     <li class="landing__header__item">
                         <a href="main.html" class="header__link">Головна</a>
                     </li>
-                    <li class="landing__header__item hidden__link">
+                    <li class="landing__header__item hidden__link" onclick="location.href='cart.html';">
                         <a href="#" class="header__link">Кошик</a>
                     </li>
+                    <li class="landing__header__item hidden__link" onclick="location.href='liked.html';">
+                        <a href="#" class="header__link">Вподобані товари</a>
+                    </li> 
                     <li class="landing__header__item hidden__link">
                         <a href="#" class="header__link">Авторизуватися</a>
                     </li> 
@@ -85,7 +88,7 @@
                 <p class="learn__more"><a href="#about" class="learn__more-link js-scroll">дізнатися більше</a></p>
             </div>
         </section>
-        <section class="items__info__section">
+        <section class="items__info__section" id="about">
             <div class="landing__wrapper">
                 <h3 class="items__info-heading">У нас ви можете придбати велике розмаїття товарів високої якості від спортивного харчування до тренажерів!</h3>
                 <h3 class="items__info-heading-mobile">Велике розмаїття товарів високої якості</h3>
@@ -144,7 +147,7 @@
                 </div>
             </div>
         </section>
-        <section class="advantages__section" id="">
+        <section class="advantages__section">
             <div class="landing__wrapper">
                 <div class="heading__advantages">
                     <h3 class="heading__advantages-text" id="about">
