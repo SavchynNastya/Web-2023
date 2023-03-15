@@ -744,8 +744,6 @@ span.dot {
 
   .producer__filtering .filter__name {
     padding: 0.7rem 2.8rem 0.7rem 1.7rem; }
-  .producer__filtering .producer__filtering-container {
-    bottom: -365px; }
 
   .price__filtering .filter__name {
     padding: 0.7rem 1.7rem 0.7rem 2.8rem; }
