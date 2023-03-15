@@ -82,3 +82,37 @@
   }
   // }
 })();
+
+
+(function () {
+  let activeSubcategory = localStorage.getItem("activeSubcategory");
+
+  let categories = document.querySelectorAll(".category");
+  let subcategories = document.querySelectorAll(".subcategory");
+
+  categories.forEach((category) => {
+    category.addEventListener("click", function () {
+      categories.forEach((c) => c.classList.remove("active-category"));
+
+      category.classList.add("active-category");
+    });
+  });
+
+  subcategories.forEach((subcategory) => {
+    subcategory.addEventListener("click", function () {
+      subcategories.forEach((c) => c.classList.remove("active-subcategory"));
+
+      subcategory.classList.add("active-subcategory");
+
+      localStorage.setItem("activeSubcategory", subcategory.id);
+    });
+  });
+
+  if (activeSubcategory) {
+    let prevActive = document.getElementById(activeSubcategory);
+    if (prevActive) {
+      subcategories.forEach((c) => c.classList.remove("active-subcategory"));
+      prevActive.classList.add("active-subcategory");
+    }
+  }
+})();

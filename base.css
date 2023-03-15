@@ -544,7 +544,7 @@ span.dot {
   font-size: 1.125rem;
   line-height: 1.5rem; }
 
-.category.active {
+.active-category {
   background-color: rgba(239, 101, 1, 0.4); }
 
 .subcategories {
@@ -553,19 +553,19 @@ span.dot {
 .subcategories__list {
   list-style: none;
   display: flex;
+  justify-content: space-between;
   margin-bottom: 2.0rem; }
 
 .subcategory {
-  margin-right: 2.125rem;
   margin-bottom: 0.813rem; }
   .subcategory:last-child {
     margin-right: 0; }
 
-.subcategory.active {
+.active-subcategory {
   position: relative; }
-  .subcategory.active a {
+  .active-subcategory a {
     color: #EF6501; }
-  .subcategory.active::before {
+  .active-subcategory::before {
     content: "";
     display: block;
     width: 2.688rem;
@@ -746,8 +746,8 @@ span.dot {
   display: grid;
   justify-content: center;
   grid-template-columns: repeat(6, 1fr);
-  column-gap: 1.042vw;
-  row-gap: 2.44vh; }
+  column-gap: 1.25rem;
+  row-gap: 1.25rem; }
 
 .main__item__card {
   width: 210px;
@@ -813,6 +813,19 @@ span.dot {
 @media screen and (min-height: 1024px) {
   .slider__full {
     margin-top: 8vh; } }
+@media screen and (max-width: 1390px){
+  .items__container {
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 1000px;
+    margin: 0 auto; 
+    row-gap: 1.923rem; 
+    column-gap: 1.923rem; } 
+  
+  .slider__full {
+    margin-top: 10rem; }
+
+  .wrapper {
+    max-width: 1070px; } }
 @media screen and (max-width: 1342px) {
   html {
     font-size: 0.9rem; }
@@ -822,12 +835,7 @@ span.dot {
     line-height: 1.5rem; }
 
   .footer__logo_big {
-    max-width: 230px; }
-
-  .items__container {
-    grid-template-columns: repeat(4, 1fr);
-    max-width: 1000px;
-    margin: 0 auto; } }
+    max-width: 230px; } }
 @media screen and (max-width: 1080px) {
   html {
     font-size: 0.7rem; } }
@@ -903,7 +911,11 @@ span.dot {
 
   .subcategories__list {
     overflow: scroll;
-    flex-wrap: nowrap; } }
+    flex-wrap: nowrap;
+    justify-content: center; } 
+
+  .subcategory {
+    margin-right: 2.125rem; }}
 @media screen and (max-width: 906px) {
   .items__container {
     grid-template-columns: repeat(3, 1fr);
@@ -2558,7 +2570,7 @@ span.dot {
   justify-content: center;
   grid-template-columns: repeat(6, 1fr);
   column-gap: 1.042vw;
-  row-gap: 2.44vh;
+  row-gap: 4.88vh;
   margin-bottom: 5rem; }
 
 @media screen and (max-width: 1342px) {
