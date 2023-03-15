@@ -380,8 +380,9 @@ img {
 	.header {
 		.wrapper {
 			margin: 0;
+			padding: 0;
 		}
-		padding: 1.46vh 2vw;
+		padding: 1.46vh 15px;
 	}
 }
 @media screen and (max-width: 664px) {

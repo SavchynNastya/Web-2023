@@ -351,9 +351,10 @@ img {
     top: 25%; }
 
   .header {
-    padding: 1.46vh 2vw; }
+    padding: 1.46vh 15px; }
     .header .wrapper {
-      margin: 0; } }
+      margin: 0;
+      padding: 0; } }
 @media screen and (max-width: 664px) {
   html {
     font-size: 0.68rem; } }
@@ -899,11 +900,6 @@ span.dot {
     color: #fff;
     left: 60px;
     top: 25%; }
-
-  .header {
-    padding: 1.46vh 2vw; }
-    .header .wrapper {
-      margin: 0; }
 
   .subcategories__list {
     overflow: scroll;
