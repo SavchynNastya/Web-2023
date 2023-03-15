@@ -16,6 +16,9 @@ body {
 	font-family: $font-family_1;
 	font-weight: 400;
 	background-color: $background-color_1;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
 }
 * {
 	margin: 0;
@@ -136,6 +139,8 @@ img {
 	background-color: $background-color_2;
 	padding: 2.563rem 0 1rem 0;
 	color: $color_2;
+	float: inline-end;
+  	margin-top: auto;
 }
 .footer__logo {
 	text-align: center;

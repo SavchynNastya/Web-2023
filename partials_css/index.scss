@@ -566,13 +566,6 @@
     .header__burger-line-close:last-child{
         transform: translateY(-50%) rotate(-45deg);
     }
-
-}
-@media screen and (max-width: 854px){
-    .card {
-        flex: 0 0 50%;
-        padding: 0 10px;
-    }
     .sub__heading{
         margin-bottom: 3rem;
     }
@@ -583,8 +576,14 @@
     .button__white {
         display: block;
         margin: 0 auto;
-        font-size: 1.607rem;
-        line-height: 1.964rem;
+        font-size: 3rem;
+        line-height: 3.5rem;
+    }
+}
+@media screen and (max-width: 854px){
+    .card {
+        flex: 0 0 50%;
+        padding: 0 10px;
     }
 }
 

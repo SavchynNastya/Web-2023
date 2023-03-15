@@ -120,7 +120,6 @@ span.dot {
 .subcategories__list {
 	list-style: none;
 	display: flex;
-	flex-wrap: wrap;
 	margin-bottom: 2.0rem;
 }
 .subcategory {
@@ -403,6 +402,11 @@ span.dot {
 	line-height: 18px;
 	color: $color_6;
 }
+@media screen and (min-height: 1024px){
+	.slider__full{
+		margin-top: 8vh;
+	}
+}
 @media screen and (max-width: 1342px) {
 	html {
 		font-size: 0.9rem;
@@ -509,6 +513,10 @@ span.dot {
 		}
 		padding: 1.46vh 2vw;
 	}
+	.subcategories__list {
+		overflow: scroll;
+		flex-wrap: nowrap;
+	}
 }
 @media screen and (max-width: 906px) {
 	.items__container {
@@ -552,10 +560,6 @@ span.dot {
 			width: 10px;
 			height: 10px;
 		}
-	}
-	.subcategories__list {
-		overflow: scroll;
-		flex-wrap: nowrap;
 	}
 	.price__sorting {
 		.filter__name {
@@ -965,5 +969,13 @@ span.dot {
 @media screen and (max-width: 329px) {
 	.main__item__cost{
 		margin-top: 10px;
+	}
+}
+@media screen and (max-width: 300px) {
+	.main__item__cost{
+		font-size: 12px;
+	}
+	.main__item__name{
+		font-size: 12px;
 	}
 }

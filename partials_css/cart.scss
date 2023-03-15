@@ -162,7 +162,7 @@ $border-color_1: #D9D9D9;
 .increase {
 	margin-right: 3px;
 }
-.descrease {
+.decrease {
 	line-height: 3px;
 }
 .cart__summary {
@@ -252,9 +252,6 @@ $border-color_1: #D9D9D9;
 	}
 }
 @media screen and (max-width: 1085px) {
-	// .main {
-	// 	min-height: calc(100vh - 426.5px);
-	// }
 	.cart__container {
 		flex-direction: column;
 		justify-content: center;
@@ -383,5 +380,25 @@ $border-color_1: #D9D9D9;
 @media screen and (max-width: 330px){
 	.cart__summary__pricing{
 		padding: 0.8rem 2.3rem 0.8rem 1.2rem;
+	}
+}
+
+@media screen and (max-width: 320px){
+	.cart__summary__pricing-value{
+		font-size: 1.31rem;
+	}
+	.cart__quantity-text{
+		font-size: 1.31rem;
+		&:after{
+			left: 7px;
+			top: 9px;
+		}
+	}
+	.cart__quantity{
+		padding-right: 3rem;
+		margin-left: -150px;
+	}
+	.method{
+		width: 33%;
 	}
 }

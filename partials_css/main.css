@@ -122,7 +122,6 @@ span.dot:last-child {
 .subcategories__list {
   list-style: none;
   display: flex;
-  flex-wrap: wrap;
   margin-bottom: 2rem;
 }
 
@@ -432,6 +431,12 @@ span.dot:last-child {
   color: #0A0909;
 }
 
+@media screen and (min-height: 1024px){
+	.slider__full{
+		margin-top: 8vh;
+	}
+}
+
 @media screen and (max-width: 1342px) {
   html {
     font-size: 0.9rem;
@@ -540,6 +545,10 @@ span.dot:last-child {
   .header .wrapper {
     margin: 0;
   }
+  .subcategories__list {
+    overflow: scroll;
+    flex-wrap: nowrap;
+  }
 }
 @media screen and (max-width: 906px) {
   .items__container {
@@ -581,10 +590,6 @@ span.dot:last-child {
   .dots-wrapper .dot {
     width: 10px;
     height: 10px;
-  }
-  .subcategories__list {
-    overflow: scroll;
-    flex-wrap: nowrap;
   }
   .price__sorting {
     position: relative;
