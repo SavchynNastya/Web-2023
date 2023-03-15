@@ -575,7 +575,7 @@ span.dot {
     border-top: none;
     left: -2px;
     right: -2px;
-    bottom: -370px;
+    bottom: -350px;
     padding: 0.5rem 0.7rem; }
 
   .producer {
@@ -759,7 +759,7 @@ span.dot {
     align-items: center; }
 
   .price__filtering-form {
-    bottom: -130px; }
+    bottom: -120px; }
 
   .submit__price__filter-form {
     font-size: 0.9rem; }

@@ -1032,7 +1032,7 @@ span.dot {
     border-top: none;
     left: -2px;
     right: -2px;
-    bottom: -370px;
+    bottom: -350px;
     padding: 0.5rem 0.7rem; }
 
   .producer {
@@ -1216,7 +1216,7 @@ span.dot {
     align-items: center; }
 
   .price__filtering-form {
-    bottom: -130px; }
+    bottom: -120px; }
 
   .submit__price__filter-form {
     font-size: 0.9rem; }
@@ -2797,7 +2797,10 @@ span.dot {
     line-height: 1.6rem; }
 
   .item-page__item__advantage {
-    padding: 0.9rem 0 0.9rem 6rem; } }
+    padding: 0.9rem 0 0.9rem 6rem; } 
+  
+  .item__page-main .wrapper{
+		max-width: 1070px; } }
 @media screen and (max-width: 900px) {
   .item-page__item__img {
     height: 350px;
