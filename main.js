@@ -44,7 +44,7 @@
 })();
 
 (function () {
-  const likeItemButton = document.querySelectorAll(".like__item-button");
+  const likeItemButton = document.querySelectorAll(".main__like__item-button");
   console.log(likeItemButton)
   likeItemButton.forEach((likeButton) =>{
     likeButton.addEventListener('click', () => {
