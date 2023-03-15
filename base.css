@@ -1205,6 +1205,9 @@ span.dot {
   .price__filtering .filter__name {
     padding: 0.7rem 1.7rem 0.7rem 2.8rem; }
 
+  .producer__filtering-container{
+		bottom: -365px; }
+
   .input__fields {
     justify-content: center;
     padding-right: 0; }
