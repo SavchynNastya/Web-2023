@@ -371,7 +371,7 @@ span.dot {
   .slider__full {
     margin-top: 10rem; }
 
-  .wrapper {
+  .main__section-main__page .wrapper {
     max-width: 1070px; } }
 @media screen and (max-width: 1342px) {
   html {
@@ -393,6 +393,7 @@ span.dot {
     font-size: 0.7rem; } }
 @media screen and (max-width: 946px) {
   .slider__full {
+    margin-top: 6rem;
     margin-bottom: 0; }
 
   .slide__full-info-last {
@@ -415,9 +416,6 @@ span.dot {
       display: flex;
       justify-content: center;
       margin-right: 0; }
-
-  .input__search-field {
-    width: 88%; }
 
   .header__nav_active {
     transform: translateX(0); }
@@ -649,14 +647,14 @@ span.dot {
   .category__icon {
     width: 3rem;
     height: 3rem; } }
-@media screen and (max-width: 664px) {
-  html {
-    font-size: 0.68rem; }
-
+@media screen and (max-width: 692px) {
   .items__container {
     grid-template-columns: repeat(2, 1fr);
     max-width: 500px;
-    margin: 0 auto; }
+    margin: 0 auto; } }
+@media screen and (max-width: 664px) {
+  html {
+    font-size: 0.68rem; }
 
   .slide__full-desc {
     font-size: 1.2rem;
@@ -670,7 +668,7 @@ span.dot {
       line-height: 1.1rem; }
 
   .producer__filtering-container {
-    bottom: -360px; } }
+    bottom: -370px; } }
 @media screen and (max-width: 572px) {
   .slider__full {
     display: none; }
@@ -678,6 +676,8 @@ span.dot {
   .search__container__sm-screen {
     margin-top: 5.515rem;
     margin-bottom: 1.379rem; }
+    .search__container__sm-screen .search__container-form {
+      width: 100%; }
 
   .input__search-field {
     padding: 10px 0 10px 14px; }
@@ -736,7 +736,11 @@ span.dot {
     font-size: 1rem; }
 
   .label__producer {
-    padding-left: 18px; }
+    padding-left: 18px;
+    font-size: 0.82rem; }
+
+  .producers__col {
+    margin-right: 0.688rem; }
 
   .producer__filtering .filter__name {
     padding: 0.7rem 2.8rem 0.7rem 1.7rem; }
@@ -755,7 +759,10 @@ span.dot {
     align-items: center; }
 
   .price__filtering-form {
-    bottom: -120px; }
+    bottom: -130px; }
+
+  .submit__price__filter-form {
+    font-size: 0.9rem; }
 
   .label__price__filter {
     max-width: fit-content; }
