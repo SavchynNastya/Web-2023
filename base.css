@@ -1941,7 +1941,8 @@ span.dot {
   font-family: 'Playfair Display', serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 2.25rem;
+  font-size: 2.625rem;
+  text-transform: uppercase;
   line-height: 4rem;
   text-align: center;
   color: #FFFFFF;
