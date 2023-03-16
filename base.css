@@ -828,8 +828,8 @@ span.dot {
   .slider__full {
     margin-top: 10rem; }
 
-  .main__section-main__page .wrapper {
-    max-width: 1070px; } }
+  .wrapper {
+    max-width: 1170px; } }
 @media screen and (max-width: 1342px) {
   html {
     font-size: 0.9rem; }
@@ -1360,7 +1360,7 @@ span.dot {
   line-height: 2.125rem;
   color: #EF6501;
   position: relative;
-  margin-bottom: 1.625rem; }
+  margin-bottom: 7rem; }
   .page__heading::before {
     content: '';
     background-color: #EF6501;
@@ -1377,10 +1377,11 @@ span.dot {
   font-size: 1.125rem;
   line-height: 1.375rem;
   color: #5E5E5E;
-  margin-bottom: 4.938rem; }
+  margin-bottom: 4.938rem; 
+  display: none; }
 
 .cart__container {
-  margin-bottom: 5.688rem;
+  margin-bottom: 6.25rem;
   display: flex;
   justify-content: space-between; }
 
@@ -1547,7 +1548,7 @@ span.dot {
   margin: 0 auto;
   margin-bottom: 24px; }
 
-@media screen and (max-width: 1306px) {
+@media screen and (max-width: 1390px) {
   .cart__items__container {
     margin-bottom: 5rem; }
 
@@ -2575,7 +2576,8 @@ span.dot {
   .hero__adv-item {
     font-size: 1.2rem; } }
 .items__quanity {
-  margin-bottom: 4.938rem; }
+  margin-bottom: 4.938rem; 
+  display: none; }
 
 .liked__items {
   margin-bottom: 5.438rem; }
@@ -2586,7 +2588,7 @@ span.dot {
   grid-template-columns: repeat(6, 1fr);
   column-gap: 1.042vw;
   row-gap: 2.44vh;
-  margin-bottom: 5rem; }
+  margin-bottom: 6.25rem; }
 
 @media screen and (max-width: 1342px) {
   .liked__items__container {

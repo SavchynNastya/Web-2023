@@ -362,7 +362,7 @@ span.dot {
     margin-top: 8vh; } }
 @media screen and (max-width: 1390px) {
   .items__container {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, auto);
     max-width: 1000px;
     margin: 0 auto;
     row-gap: 1.923rem;
@@ -371,7 +371,7 @@ span.dot {
   .slider__full {
     margin-top: 10rem; }
 
-  .main__section-main__page .wrapper {
+  .wrapper {
     max-width: 1070px; } }
 @media screen and (max-width: 1342px) {
   html {

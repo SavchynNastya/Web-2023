@@ -1,6 +1,7 @@
 
 .items__quanity {
 	margin-bottom: 4.938rem;
+	display: none;
 }
 .liked__items {
 	margin-bottom: 5.438rem;
@@ -11,7 +12,7 @@
 	grid-template-columns: repeat(6, 1fr);
 	column-gap: 1.042vw;
 	row-gap: 2.44vh;
-	margin-bottom: 5rem;
+	margin-bottom: 6.25rem;
 }
 @media screen and (max-width: 1342px) {
 	.liked__items__container {
