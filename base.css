@@ -2084,7 +2084,7 @@ span.dot {
     background-color: #D9D9D9;
     content: '';
     display: block;
-    width: 70px;
+    width: 72px;
     position: absolute;
     top: 0;
     left: 0;
@@ -2094,10 +2094,10 @@ span.dot {
     background-color: #D9D9D9;
     content: '';
     display: block;
-    width: 70px;
+    width: 72px;
     position: absolute;
     top: 0;
-    right: -10px;
+    right: 0;
     bottom: 0;
     z-index: 11; }
 
@@ -2203,6 +2203,9 @@ span.dot {
   .item__card {
     margin: 0 auto; }
 
+  .slider{
+    max-width: 884px; }
+
   .learn__more {
     position: absolute;
     bottom: 3vh; }
@@ -2289,7 +2292,9 @@ span.dot {
 @media screen and (max-width: 854px) {
   .card {
     flex: 0 0 50%;
-    padding: 0 10px; } }
+    padding: 0 10px; } 
+  .slider{
+    max-width: 616px; } }
 @media screen and (max-width: 756px) {
   .about__items-card {
     max-width: 30%; }
