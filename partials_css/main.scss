@@ -137,7 +137,7 @@ span.dot {
 	&::before {
 		content: "";
 		display: block;
-		width: 2.688rem;
+		width: calc(100% + 0.6rem);
 		height: 2px;
 		background-color: $background-color_4;
 		position: absolute;

@@ -10,8 +10,10 @@ descHeadings.forEach((descHeading) => {
 
         if (description.style.display === "none") {
         description.style.display = "block";
+        descHeading.querySelector(".item-page__tick").classList.add("rotate");
         } else {
         description.style.display = "none";
+        descHeading.querySelector(".item-page__tick").classList.remove("rotate");
         }
     });
 });

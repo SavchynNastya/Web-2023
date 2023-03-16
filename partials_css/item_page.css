@@ -321,10 +321,8 @@
     font-size: 2.022rem;
     line-height: 2.206rem;
     margin-bottom: 1.011rem;
-    position: relative; }
-    .item-page__item__desc-heading:hover {
-      text-decoration: underline;
-      cursor: pointer; }
+    position: relative; 
+    cursor: pointer; }
 
   .item-page__item__desc-text {
     font-size: 1.287rem;
