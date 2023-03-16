@@ -2086,9 +2086,9 @@ span.dot {
     display: block;
     width: 70px;
     position: absolute;
-    top: 0px;
+    top: 0;
     left: 0;
-    bottom: 0px;
+    bottom: 0;
     z-index: 11; }
   .slider::after {
     background-color: #D9D9D9;
@@ -2096,9 +2096,9 @@ span.dot {
     display: block;
     width: 70px;
     position: absolute;
-    top: 0px;
+    top: 0;
     right: -10px;
-    bottom: 0px;
+    bottom: 0;
     z-index: 11; }
 
 .slider__wrapper {
