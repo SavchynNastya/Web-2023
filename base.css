@@ -74,6 +74,7 @@ img {
   height: 2px;
   background-color: #ffffff;
   position: absolute;
+  border-radius: 2px;
   left: 0; }
 
 .header__burger-line-first {
@@ -118,7 +119,7 @@ img {
   height: 30px; }
 
 .wrapper__footer {
-  max-width: 1070px;
+  max-width: 1170px;
   padding: 0 15px;
   margin: 0 auto; }
 
@@ -829,7 +830,7 @@ span.dot {
     margin-top: 10rem; }
 
   .wrapper {
-    max-width: 1070px; } }
+    max-width: 1170px; } }
 @media screen and (max-width: 1342px) {
   html {
     font-size: 0.9rem; }
@@ -1355,7 +1356,7 @@ span.dot {
     font-size: 12px; } }
 .page__heading {
   margin-top: 11.813rem;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 2rem;
   line-height: 2.125rem;
   color: #EF6501;
@@ -1628,8 +1629,8 @@ span.dot {
     margin-bottom: 10px; } }
 @media screen and (max-width: 572px) {
   .page__heading {
-    margin-top: 6.5rem;
-    margin-bottom: 2.206rem; }
+		margin-top: 7.3rem;
+		margin-bottom: 5rem; }
 
   .cart__items__quanity {
     margin-bottom: 3.676rem; }
@@ -2591,7 +2592,7 @@ span.dot {
 
 .liked__items__container {
   display: grid;
-  justify-content: center;
+  justify-content: flex-start;
   grid-template-columns: repeat(6, 1fr);
   column-gap: 1.042vw;
   row-gap: 2.44vh;
@@ -2601,17 +2602,17 @@ span.dot {
   .liked__items__container {
     grid-template-columns: repeat(4, 1fr);
     max-width: 1000px;
-    margin: 0 auto 5rem auto; } }
+    margin-bottom: 5rem; } }
 @media screen and (max-width: 906px) {
   .liked__items__container {
     grid-template-columns: repeat(3, 1fr);
     max-width: 770px;
-    margin: 0 auto 5rem auto; } }
+    margin-bottom: 5rem; } }
 @media screen and (max-width: 664px) {
   .liked__items__container {
     grid-template-columns: repeat(2, 1fr);
     max-width: 500px;
-    margin: 0 auto 5rem auto; } }
+    margin-bottom: 5rem; } }
 @media screen and (max-width: 572px) {
   .liked__items__container {
     display: flex;
@@ -2813,7 +2814,7 @@ span.dot {
     padding: 0.9rem 0 0.9rem 6rem; }
 
   .item__page-main .wrapper {
-    max-width: 1070px; } }
+    max-width: 1170px; } }
 @media screen and (max-width: 900px) {
   .item-page__item__img {
     height: 350px;
