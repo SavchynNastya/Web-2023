@@ -2730,11 +2730,14 @@ span.dot {
   line-height: 1.5rem;
   letter-spacing: -0.2px;
   color: #FFFFFF;
-  padding: 1.25rem 1.25rem 1.25rem 3.625rem;
+  padding: 1.25rem;
   border-radius: 15px;
-  background: rgba(239, 101, 1, 0.85) url("./img/svg/heart_item-page.svg") no-repeat top 50% left 7%;
-  background-size: 1.75rem 1.75rem;
+  display: flex;
+  background-color: rgba(239, 101, 1, 0.85);
   cursor: pointer; }
+
+.item-page-like{
+  margin-right: 10px; }
 
 .item-page__item__advantages {
   display: flex;
@@ -2786,10 +2789,11 @@ span.dot {
   .item-page__add_text {
     display: none; }
 
+  .item-page-like{
+    margin-right: 0; }
+
   .item-page__add__to__liked {
-    padding: 1.25rem 2rem;
-    background: rgba(239, 101, 1, 0.85) url("./img/svg/heart_item-page.svg") no-repeat top 50% left 50%;
-    background-size: 2.100rem 2.100rem; }
+    padding: 1.25rem; }
 
   .item-page__item__advantage {
     padding: 0.5rem 0 0.5rem 4.3rem; }
@@ -2928,7 +2932,7 @@ span.dot {
     line-height: 2.206rem; }
 
   .item-page__add__to__liked {
-    padding: 2rem 2.5rem; }
+    padding: 2rem; }
 
   .item-page__item__buttons {
     justify-content: center;

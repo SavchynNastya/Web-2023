@@ -42,3 +42,17 @@ descHeadings.forEach((descHeading) => {
   }
   // }
 })();
+
+function likeItemPage(){
+  const likeButton = document.querySelector(
+    ".item-page__add__to__liked"
+  );
+  likeButton.addEventListener("click", () => {
+    const likeIcon = likeButton.querySelector(".item-page-like");
+    if(likeIcon.src.includes("/img/svg/heart_item-page.svg")) {
+      likeIcon.src = "img/svg/heart_item-page-liked.svg";
+    } else {
+      likeIcon.src = "img/svg/heart_item-page.svg";
+    }
+  });
+}

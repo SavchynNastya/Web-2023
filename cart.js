@@ -3,11 +3,6 @@
     const increaseQuantityBtn = document.querySelector(".increase");
     const decreaseQuantityBtn = document.querySelector(".decrease");
 
-    // inputQuantity.addEventListener('keydown', function(e){
-    //     e.preventDefault();
-    //     console.log("helo")
-    // });
-
     increaseQuantityBtn.addEventListener("click", function () {
       inputQuantity.value = parseInt(inputQuantity.value) + 1;
     });
@@ -21,7 +16,6 @@
 
 (function () {
   const likeItemButton = document.querySelectorAll(".like__item-button");
-  console.log(likeItemButton);
   likeItemButton.forEach((likeButton) => {
     likeButton.addEventListener("click", () => {
       let likeButtonIcon = likeButton.querySelector(".like__item");
