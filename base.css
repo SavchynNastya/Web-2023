@@ -2735,9 +2735,6 @@ span.dot {
   background-color: rgba(239, 101, 1, 0.85);
   cursor: pointer; }
 
-.item-page-like {
-  margin-right: 10px; }
-
 .item-page__item__advantages {
   display: flex;
   flex-direction: column;
@@ -2774,9 +2771,6 @@ span.dot {
   .item-page__item__desc-text {
     display: block; } }
 @media screen and (max-width: 1400px) {
-  .item-page__item__content {
-    justify-content: center; }
-
   .item-page__item__img {
     height: 400px;
     width: 400px;

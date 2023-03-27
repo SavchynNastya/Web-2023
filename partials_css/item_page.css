@@ -154,8 +154,6 @@
   .item-page__item__desc-text {
     display: block; } }
 @media screen and (max-width: 1400px) {
-  .item-page__item__content {
-    justify-content: center; }
 
   .item-page__item__img {
     height: 400px;
