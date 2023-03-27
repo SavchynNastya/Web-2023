@@ -883,7 +883,6 @@ span.dot:last-child {
 }
 
 .main__item__card {
-  width: 210px;
   height: 290px;
   background: #fff;
   box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
@@ -906,6 +905,7 @@ span.dot:last-child {
 .main__img__container {
   height: 180px;
   width: 180px;
+  margin: 0 auto;
   margin-bottom: 10px;
 }
 

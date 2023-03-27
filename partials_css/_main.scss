@@ -341,7 +341,7 @@ span.dot {
   	row-gap: 1.25rem;
 }
 .main__item__card {
-	width: 210px;
+	// width: 210px;
 	height: 290px;
 	background: #fff;
 	box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
@@ -362,6 +362,8 @@ span.dot {
 .main__img__container {
 	height: 180px;
 	width: 180px;
+	margin: 0 auto;
+	// added
 	margin-bottom: 10px;
 }
 .main__item__img {
