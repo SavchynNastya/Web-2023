@@ -127,8 +127,18 @@
                 <p class="filter__name-sm-screen">Сортування</p>
                 <!-- <img src="./img/svg/arrow_down.svg" alt="" class="arrow__down-img"> -->
                 <ul class="drop__down-list">
-                    <li class="sort__option">За спаданням</li>
-                    <li class="sort__option">За зростанням</li>
+                    <li class="sort__option">
+                        <label for="descending">
+                            <input type="radio" id="descending-order" name="sort-orders" value="descending" hidden>
+                            За спаданням
+                        </label>
+                    </li>
+                    <li class="sort__option">
+                        <label for="ascending">
+                            <input type="radio" id="ascending-order" name="sort-orders" value="ascending" hidden>
+                            За зростанням
+                        </label>
+                    </li>
                 </ul>
             </div>
             <div class="producer__filtering filter">

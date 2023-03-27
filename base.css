@@ -119,7 +119,7 @@ img {
   height: 30px; }
 
 .wrapper__footer {
-  max-width: 1170px;
+  max-width: 1070px;
   padding: 0 15px;
   margin: 0 auto; }
 
@@ -272,8 +272,8 @@ img {
     max-width: 230px; }
 
   .input__search-field::placeholder {
-    font-size: 1.3rem;
-    line-height: 1.5rem; } }
+    font-size: 1rem;
+    line-height: 1.2rem; } }
 @media screen and (max-width: 1080px) {
   html {
     font-size: 0.7rem; }
@@ -696,8 +696,7 @@ span.dot {
 
 .price__filtering {
   border: 2px solid #D9D9D9;
-  border-radius: 15px;
-  align-self: start; }
+  border-radius: 15px; }
 
 .label__price__filter {
   font-weight: 400;
@@ -1629,8 +1628,8 @@ span.dot {
     margin-bottom: 10px; } }
 @media screen and (max-width: 572px) {
   .page__heading {
-		margin-top: 7.3rem;
-		margin-bottom: 5rem; }
+    margin-top: 7.3rem;
+    margin-bottom: 5rem; }
 
   .cart__items__quanity {
     margin-bottom: 3.676rem; }
@@ -1892,10 +1891,9 @@ span.dot {
 
 .about__items-caption {
   background: rgba(217, 217, 217, 0.7);
-  font-size: 1rem;
+  font-size: 1.103rem;
   font-weight: 500;
   line-height: 1.625rem;
-  letter-spacing: 0.05em;
   color: #000000;
   padding: 1rem 0.75rem;
   width: 100%;
@@ -1989,7 +1987,7 @@ span.dot {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 500;
-  font-size: 2.625rem;
+  font-size: 2.574rem;
   line-height: 2.875rem;
   text-transform: uppercase; }
 
@@ -2188,7 +2186,7 @@ span.dot {
 
 @media screen and (max-width: 1390px) {
   html {
-    font-size: 0.65rem; }
+    font-size: 0.7rem; }
 
   .advantages__cards {
     max-width: 80%;
@@ -2737,7 +2735,7 @@ span.dot {
   background-color: rgba(239, 101, 1, 0.85);
   cursor: pointer; }
 
-.item-page-like{
+.item-page-like {
   margin-right: 10px; }
 
 .item-page__item__advantages {
@@ -2776,9 +2774,6 @@ span.dot {
   .item-page__item__desc-text {
     display: block; } }
 @media screen and (max-width: 1400px) {
-  .item-page__wrapper {
-    max-width: 1170px; }
-
   .item-page__item__content {
     justify-content: center; }
 
@@ -2790,7 +2785,7 @@ span.dot {
   .item-page__add_text {
     display: none; }
 
-  .item-page-like{
+  .item-page-like {
     margin-right: 0; }
 
   .item-page__add__to__liked {
