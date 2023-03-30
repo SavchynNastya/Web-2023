@@ -93,20 +93,29 @@
                 <button type="submit" class="search__button"><img src="./img/svg/search.svg" alt="" class="search__button-img"></button>
             </form>
         </div>
-        <div class="categories wrapper">
+        <form class="categories wrapper">
             <div class="category active-category">
                 <img src="./img/category-1.png" alt="" class="category__icon">
-                <p class="category__name">Домашні тренування</p>
+                <label for="category-1" class="category__name">
+                    Домашні тренування
+                    <input type="radio" id="category-1" name="category" value="Домашні тренування" hidden>
+                </label>
             </div>
             <div class="category">
                 <img src="./img/category-2.png" alt="" class="category__icon">
-                <p class="category__name">Професійний спорт</p>
+                <label for="category-2" class="category__name">
+                    Професійний спорт
+                    <input type="radio" id="category-2" name="category" value="Професійний спорт" hidden>
+                </label>
             </div>
             <div class="category">
                 <img src="./img/category-3.png" alt="" class="category__icon">
-                <p class="category__name">Спортивне харчування</p>
+                <label for="category-3" class="category__name">
+                    Спортивне харчування
+                    <input type="radio" id="category-3" name="category" value="Спортивне харчування" hidden>
+                </label>
             </div>
-        </div>
+        </form>
         <div class="subcategories wrapper">
             <ul class="subcategories__list">
                 <li class="subcategory active-subcategory" id="subcat-1"><a href="" class="subcategory__link">Все</a></li>
