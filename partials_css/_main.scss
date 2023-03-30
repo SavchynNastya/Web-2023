@@ -90,12 +90,11 @@ span.dot {
 	display: flex;
 }
 .category {
+	text-decoration: none;
+	color: #000000;
 	cursor: pointer;
 	border-radius: 0.938rem;
 	flex: 0 0 calc(33.3% - 1rem);
-	display: flex;
-	justify-content: center;
-	align-items: center;
 	margin-right: 1rem;
 	background-color: $background-color_2;
 	padding: 0 0.938rem;
@@ -103,13 +102,14 @@ span.dot {
         margin-right: 0;
     }
 }
+.category div{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+}
 .category__icon {
 	margin-right: 8%;
-}
-.category label{
-	max-width: fit-content;
-	display: inline-block;
-	
 }
 .category__name {
 	font-weight: 400;
@@ -136,7 +136,7 @@ span.dot {
 }
 .active-subcategory {
 	position: relative;
-	label {
+	a {
 		color: $color_2;
 	}
 	&::before {

@@ -611,12 +611,11 @@ span.dot:last-child {
 }
 
 .category {
+  text-decoration: none;
+  color: #000000;
   cursor: pointer;
   border-radius: 0.938rem;
   flex: 0 0 calc(33.3% - 1rem);
-  display: flex;
-  justify-content: center;
-  align-items: center;
   margin-right: 1rem;
   background-color: #D9D9D9;
   padding: 0 0.938rem;
@@ -625,13 +624,15 @@ span.dot:last-child {
   margin-right: 0;
 }
 
-.category__icon {
-  margin-right: 8%;
+.category div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
 
-.category label {
-  max-width: fit-content;
-  display: inline-block;
+.category__icon {
+  margin-right: 8%;
 }
 
 .category__name {
@@ -665,7 +666,7 @@ span.dot:last-child {
 .active-subcategory {
   position: relative;
 }
-.active-subcategory label {
+.active-subcategory a {
   color: #EF6501;
 }
 .active-subcategory::before {
