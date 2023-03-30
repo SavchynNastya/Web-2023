@@ -1,25 +1,47 @@
 (function () {
-    const inputQuantity = document.querySelector(".items__quantity-input");
-    const increaseQuantityBtn = document.querySelector(".increase");
-    const decreaseQuantityBtn = document.querySelector(".decrease");
+    const items = document.querySelectorAll(".cart__item__card");
 
-    increaseQuantityBtn.addEventListener("click", function () {
-      inputQuantity.value = parseInt(inputQuantity.value) + 1;
-    });
+    function updateTotalCartPrice() {
+      let total = 0;
+      items.forEach((item) => {
+        const quantity = parseInt(
+          item.querySelector(".items__quantity-input").value
+        );
+        const price = parseFloat(item.querySelector(".item__cost").textContent);
+        const itemTotal = (quantity * price).toFixed(0);
+        item.querySelector(".cart__summary__pricing-value #value").textContent =
+          itemTotal;
+        total += parseFloat(itemTotal);
+      });
+      document.getElementById("total-value").textContent = total.toFixed(0);
+    }
 
-    decreaseQuantityBtn.addEventListener("click", function () {
+    items.forEach((item) => {
+      const increaseQuantityBtn = item.querySelector(".increase");
+      const decreaseQuantityBtn = item.querySelector(".decrease");
+      const inputQuantity = item.querySelector(".items__quantity-input");
+
+      increaseQuantityBtn.addEventListener("click", function () {
+        inputQuantity.value = parseInt(inputQuantity.value) + 1;
+        updateTotalCartPrice();
+      });
+
+      decreaseQuantityBtn.addEventListener("click", function () {
         if (parseInt(inputQuantity.value) > 1) {
-            inputQuantity.value = parseInt(inputQuantity.value) - 1;
+          inputQuantity.value = parseInt(inputQuantity.value) - 1;
+          updateTotalCartPrice();
         }
+      });
     });
 })();
 
 (function () {
-  const likeItemButton = document.querySelectorAll(".like__item-button");
+  const likeItemButton = document.querySelectorAll(".cart__like__item-button");
+  console.log(likeItemButton);
+
   likeItemButton.forEach((likeButton) => {
     likeButton.addEventListener("click", () => {
       let likeButtonIcon = likeButton.querySelector(".like__item");
-      console.log(likeButtonIcon);
       if (likeButtonIcon.src.includes("/img/svg/item_liked.svg")) {
         likeButtonIcon.src = "img/svg/item_like.svg";
       } else {
