@@ -103,8 +103,6 @@
       subcategories.forEach((c) => c.classList.remove("active-subcategory"));
 
       subcategory.classList.add("active-subcategory");
-
-      localStorage.setItem("activeSubcategory", subcategory.id);
     });
   });
 

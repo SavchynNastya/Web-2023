@@ -136,7 +136,7 @@ span.dot {
 }
 .active-subcategory {
 	position: relative;
-	a {
+	label {
 		color: $color_2;
 	}
 	&::before {

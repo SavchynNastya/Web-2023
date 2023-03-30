@@ -665,7 +665,7 @@ span.dot:last-child {
 .active-subcategory {
   position: relative;
 }
-.active-subcategory a {
+.active-subcategory label {
   color: #EF6501;
 }
 .active-subcategory::before {
@@ -2976,6 +2976,7 @@ span.dot:last-child {
 .item-page__item__content {
   display: flex;
   margin-bottom: 3.125rem;
+  justify-content: space-between;
 }
 
 .item-page__item__img {
