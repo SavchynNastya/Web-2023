@@ -41,7 +41,9 @@
 
   likeItemButton.forEach((likeButton) => {
     likeButton.addEventListener("click", () => {
+      console.log("hii");
       let likeButtonIcon = likeButton.querySelector(".like__item");
+      console.log(likeButtonIcon);
       if (likeButtonIcon.src.includes("/img/svg/item_liked.svg")) {
         likeButtonIcon.src = "img/svg/item_like.svg";
       } else {
