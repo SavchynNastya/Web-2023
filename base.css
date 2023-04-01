@@ -1831,6 +1831,7 @@ span.dot:last-child {
   }
   .cart__summary__pricing {
     margin-left: auto;
+    margin-top: 0;
   }
 }
 @media screen and (max-width: 1085px) {
